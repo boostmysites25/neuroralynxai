@@ -7,7 +7,7 @@ export default {
       colors: {
         darkblack: "#020816",
         darkbackground: "#1d1d1f",
-        primary: "#235FC2",
+        primary: "#3c81f6",
       },
       backgroundImage: {
         footerBackground:

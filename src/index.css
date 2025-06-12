@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #235FC2;
+  background-color: #3c81f6;
   border-radius: 8px;
 }
 
@@ -132,7 +132,7 @@ html {
   animation: 1s spin linear infinite;
 }
 .loader:after {
-  color: #235FC2;
+  color: #3c81f6;
   transform: rotateY(70deg);
   animation-delay: 0.4s;
 }
@@ -342,6 +342,6 @@ html {
 }
 
 .bg-gradient-animate:hover {
-  background: linear-gradient(135deg, #235FC2 0%, #005580 50%, #235FC2 100%);
+  background: linear-gradient(135deg, #3c81f6 0%, #005580 50%, #3c81f6 100%);
   animation: gradientShift 3s ease infinite;
 }
