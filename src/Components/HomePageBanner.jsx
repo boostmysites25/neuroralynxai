@@ -54,7 +54,7 @@ const HomePageBanner = () => {
           <div className="flex flex-col gap-4 items-start justify-center relative z-[1]">
             <p
               data-aos="fade-right"
-              className="desc !text-xl text-gray-900 !font-semibold"
+              className="text-xl text-gray-900 font-semibold"
             >
               Welcome to NeuroraLynx AI
             </p>
