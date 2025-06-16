@@ -94,7 +94,7 @@ const Portfolio = ({ page }) => {
             <div className="mb-16">
               <div className="container mx-auto">
                 <h3
-                  className="main-title text-center mb-12 relative after:content-[''] after:absolute after:w-24 after:h-1 after:bg-primary after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full pb-6"
+                  className="main-title text-center mb-12 relative pb-6"
                   data-aos="fade-up"
                 >
                   Web Projects
@@ -125,10 +125,10 @@ const Portfolio = ({ page }) => {
                             />
 
                             <div className="absolute bottom-0 left-0 right-0 p-6 z-30">
-                              <h4 className="text-xl font-bold text-white mb-2 hover:text-primary">
+                              <h4 className="text-xl font-bold text-white mb-2">
                                 {obj.title}
                               </h4>
-                              <div className="w-0 h-0.5 bg-primary hover:w-full"></div>
+                              <div className="w-0 h-0.5 bg-white hover:w-full"></div>
                             </div>
 
                             <div className="absolute top-4 right-4 bg-primary/80 text-white text-xs font-bold py-1 px-2 rounded-full opacity-0 hover:opacity-100 z-30">
@@ -147,7 +147,7 @@ const Portfolio = ({ page }) => {
             <div className="mt-20">
               <div className="container mx-auto">
                 <h3
-                  className="main-title text-center mb-12 relative after:content-[''] after:absolute after:w-24 after:h-1 after:bg-primary after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:rounded-full pb-6"
+                  className="main-title text-center mb-12 relative pb-6"
                   data-aos="fade-up"
                 >
                   App Projects
@@ -176,10 +176,10 @@ const Portfolio = ({ page }) => {
                           />
 
                           <div className="absolute bottom-0 left-0 right-0 p-6 z-30">
-                            <h4 className="text-xl font-bold text-white mb-2 hover:text-primary">
+                            <h4 className="text-xl font-bold text-white mb-2">
                               {obj.title}
                             </h4>
-                            <div className="w-0 h-0.5 bg-primary hover:w-full"></div>
+                            <div className="w-0 h-0.5 bg-white hover:w-full"></div>
                           </div>
 
                           <div className="absolute top-4 right-4 bg-primary/80 text-white text-xs font-bold py-1 px-2 rounded-full opacity-0 hover:opacity-100 z-30">

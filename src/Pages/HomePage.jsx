@@ -11,6 +11,7 @@ import { useTheme } from "../Context/ThemeContext";
 import Industries from "../Components/Industries";
 import Ourvalues from "../Components/Ourvalues";
 import Portfolio from "../Components/Portfolio";
+import LeadForm from "../Components/landingpage/LeadForm";
 const HomePage = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
@@ -63,6 +64,7 @@ const HomePage = () => {
           <Testimonials />
           <Highlights />
           <Faq />
+          <LeadForm />
         </div>
       </div>
     </div>

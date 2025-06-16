@@ -23,7 +23,7 @@ const LandingHeader = () => {
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
             <Scrolllink to="home" smooth className="cursor-pointer w-auto text-white">
-              <img src={logo} alt="logo" className="w-[8rem]" />
+              <img src={logo} alt="logo" className="w-[10rem]" />
             </Scrolllink>
           </div>
 

@@ -54,9 +54,9 @@ const HomePageBanner = () => {
           <div className="flex flex-col gap-4 items-start justify-center relative z-[1]">
             <p
               data-aos="fade-right"
-              className="bg-[#ECECF2] rounded p-1 text-gray-900 text-sm"
+              className="desc !text-xl text-gray-900 !font-semibold"
             >
-              IT Services
+              Welcome to NeuroraLynx AI
             </p>
             <h1
               data-aos="fade-right"
@@ -69,13 +69,14 @@ const HomePageBanner = () => {
               user-centric digital solutions that not only look great but also
               drive results.
             </p>
-            <Link
-              to="/contact"
-              data-aos="fade-right"
-              className="primary-btn mt-10"
-            >
-              Get Started
-            </Link>
+            <div data-aos="fade-right" className="flex gap-4 mt-10">
+              <Link to="/about-us" className="primary-btn">
+                Get Started
+              </Link>
+              <Link to="/contact-us" className="primary-btn">
+                Contact Us
+              </Link>
+            </div>
           </div>
           <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
             <img

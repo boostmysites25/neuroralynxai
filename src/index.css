@@ -69,14 +69,15 @@ html {
     @apply text-[17px]  font-normal;
   }
   .primary-btn {
-    @apply bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/70 transition-colors;
+    @apply bg-primary dark:bg-white hover:bg-gradient-to-b hover:from-white hover:to-primary text-white dark:text-black hover:text-black px-6 py-2 rounded-md hover:bg-white/70 transition-all duration-300;
+    /* bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/70 transition-colors; */
   }
   .secondary-btn-white {
-    @apply dark:bg-white hover:bg-gradient-to-b hover:from-white hover:to-primary bg-gradient-to-b from-white to-[#E5E5E8] text-black px-6 py-2 rounded-md hover:bg-white/70 transition-colors duration-300;
+    @apply bg-primary dark:bg-white hover:bg-gradient-to-b hover:from-white hover:to-primary text-white dark:text-black hover:text-black px-6 py-2 rounded-md hover:bg-white/70 transition-all duration-300;
   }
   .darkandlightcardhovertext {
     @apply dark:group-hover:text-white group-hover:text-white;
-  } 
+  }
 }
 
 .hovershadow:hover {
@@ -200,9 +201,10 @@ html {
   }
 }
 
-/* Service card hover animations */
+/* Service card hover animations - Futuristic & Elegant */
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -211,7 +213,8 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -219,32 +222,108 @@ html {
   }
 }
 
-.service-card-hover {
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.service-card-hover:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 136, 204, 0.3);
-}
-
-/* Border animation for service cards */
-@keyframes borderPulse {
+@keyframes borderGlow {
   0%, 100% {
-    border-color: rgba(0, 136, 204, 0.5);
+    box-shadow: 0 0 5px rgba(60, 129, 246, 0.3), 
+                inset 0 0 5px rgba(60, 129, 246, 0.3);
+    border-color: rgba(60, 129, 246, 0.5);
   }
   50% {
-    border-color: rgba(0, 136, 204, 1);
+    box-shadow: 0 0 20px rgba(60, 129, 246, 0.6), 
+                inset 0 0 10px rgba(60, 129, 246, 0.4);
+    border-color: rgba(60, 129, 246, 0.8);
   }
 }
 
-.border-animate {
-  transition: border-color 0.3s ease;
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-3px) rotate(2deg);
+  }
+  75% {
+    transform: translateY(2px) rotate(-2deg);
+  }
 }
 
-.border-animate:hover {
-  animation: borderPulse 2s infinite;
-  border-width: 2px;
+@keyframes particleEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.service-card-futuristic {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  transform: perspective(1000px) rotateX(0) rotateY(0);
+  will-change: transform, box-shadow;
+}
+
+.service-card-futuristic:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-5px);
+}
+
+.card-glow-dark {
+  box-shadow: 0 10px 30px -15px rgba(60, 129, 246, 0.1);
+  transition: box-shadow 0.5s ease;
+}
+
+.card-glow-dark:hover {
+  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3), 
+              0 15px 35px -5px rgba(60, 129, 246, 0.2);
+}
+
+.card-glow-light {
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.card-glow-light:hover {
+  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3), 
+              0 15px 35px -5px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.card-border-animate {
+  transition: all 0.7s ease;
+}
+
+.card-border-animate:hover {
+  animation: borderGlow 3s infinite;
+}
+
+.card-gradient-animate {
+  background-size: 200% 200%;
+}
+
+.card-gradient-animate:hover {
+  animation: gradientFlow 5s ease infinite;
+}
+
+.card-particles {
+  background-image: radial-gradient(circle, rgba(60, 129, 246, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: particleEffect 15s linear infinite;
+}
+
+.icon-float {
+  animation: iconFloat 5s ease-in-out infinite;
 }
 
 /* Background gradient animation */
@@ -313,7 +392,7 @@ html {
 }
 
 .keen-slider__slide a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -344,4 +423,62 @@ html {
 .bg-gradient-animate:hover {
   background: linear-gradient(135deg, #3c81f6 0%, #005580 50%, #3c81f6 100%);
   animation: gradientShift 3s ease infinite;
+}
+
+/* Enhanced futuristic gradient effects */
+.futuristic-gradient {
+  background: linear-gradient(135deg, rgba(60, 129, 246, 0.05) 0%, rgba(0, 85, 128, 0.05) 50%, rgba(60, 129, 246, 0.05) 100%);
+  background-size: 400% 400%;
+  transition: all 0.7s ease;
+}
+
+.futuristic-gradient:hover {
+  background: linear-gradient(135deg, rgba(60, 129, 246, 0.2) 0%, rgba(0, 85, 128, 0.2) 50%, rgba(60, 129, 246, 0.2) 100%);
+  animation: gradientShift 5s ease infinite;
+}
+
+/* Blog card hover animations */
+.blog-card {
+  transform: translateY(0);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform, box-shadow;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+@keyframes shimmerBlog {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.blog-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(60, 129, 246, 0.05) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 0.75rem;
+  transition: opacity 0.5s ease;
+}
+
+.blog-card:hover::before {
+  opacity: 1;
+  animation: shimmerBlog 2s infinite;
 }

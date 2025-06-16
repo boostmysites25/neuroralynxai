@@ -26,9 +26,9 @@ const Header = () => {
       <div className="wrapper">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
-            <div className=" w-auto text-white">
-              <img src={logo} alt="logo" className="w-[8rem]" />
-            </div>
+            <Link to="/" className=" w-auto text-white">
+              <img src={logo} alt="logo" className="w-[10rem]" />
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -50,10 +50,7 @@ const Header = () => {
               )
             )}
 
-            <button
-              onClick={navigateTo}
-              className="primary-btn"
-            >
+            <button onClick={navigateTo} className="primary-btn">
               Contact Us
             </button>
             <button
