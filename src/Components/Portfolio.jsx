@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import {
   appDevelopmentPortfolio,
@@ -6,20 +5,15 @@ import {
 } from "../util/constant";
 import RoundedHeader from "./RoundedHeader";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 const animation = { duration: 60000, easing: (t) => t };
 
 const Portfolio = ({ page }) => {
   const isWeb = page === "web-development";
-  //   const isApp = page === "app-development";
-
-  const [webArrowsVisible, setWebArrowsVisible] = useState(false);
-  const [appArrowsVisible, setAppArrowsVisible] = useState(false);
 
   const displayedWebPortfolio = isWeb || !page ? webDevelopmentPortfolio : [];
   const displayedAppPortfolio = !isWeb || !page ? appDevelopmentPortfolio : [];
 
-  const [sliderRef, instanceRef] = useKeenSlider({
+  const [sliderRef] = useKeenSlider({
     loop: true,
     renderMode: "performance",
     drag: true,
@@ -50,7 +44,7 @@ const Portfolio = ({ page }) => {
     mode: "snap",
   });
 
-  const [sliderRef2, instanceRef2] = useKeenSlider({
+  const [sliderRef2] = useKeenSlider({
     loop: true,
     renderMode: "performance",
     drag: true,
@@ -100,11 +94,7 @@ const Portfolio = ({ page }) => {
                   Web Projects
                 </h3>
               </div>
-              <div
-                className="relative"
-                onMouseEnter={() => setWebArrowsVisible(true)}
-                onMouseLeave={() => setWebArrowsVisible(false)}
-              >
+              <div className="relative">
                 <div ref={sliderRef} className="keen-slider px-2 py-4">
                   {displayedWebPortfolio
                     .concat(displayedWebPortfolio)
@@ -153,11 +143,7 @@ const Portfolio = ({ page }) => {
                   App Projects
                 </h3>
               </div>
-              <div
-                className="relative"
-                onMouseEnter={() => setAppArrowsVisible(true)}
-                onMouseLeave={() => setAppArrowsVisible(false)}
-              >
+              <div className="relative">
                 <div ref={sliderRef2} className="keen-slider px-2 py-4">
                   {displayedAppPortfolio.map((obj) => (
                     <div className="keen-slider__slide" key={obj.title}>

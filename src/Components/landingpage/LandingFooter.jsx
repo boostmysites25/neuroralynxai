@@ -47,7 +47,7 @@ const LandingFooter = () => {
             <div className="col-span-1">
               <h3 className="text-white font-medium mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li>
+                <li className="group flex flex-col relative">
                   <Scrolllink
                     to="about-us"
                     key={"about-us"}
@@ -60,8 +60,9 @@ const LandingFooter = () => {
                   >
                     About Us
                   </Scrolllink>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Scrolllink
                     to="services"
                     key={"services"}
@@ -73,16 +74,18 @@ const LandingFooter = () => {
                   >
                     Services
                   </Scrolllink>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Link
                     to="/blog"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     Blog
                   </Link>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Scrolllink
                     to="contact"
                     key={"contact"}
@@ -94,6 +97,7 @@ const LandingFooter = () => {
                   >
                     Contact US
                   </Scrolllink>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
               </ul>
             </div>

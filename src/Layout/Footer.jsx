@@ -47,38 +47,42 @@ const Footer = () => {
 
             <div className="col-span-1">
               <h3 className="text-white font-medium mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
+              <ul className="space-y-3">
+                <li className="group flex flex-col relative">
                   <Link
                     to="/about-us"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     About Us
                   </Link>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Link
                     to="/services"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     Services
                   </Link>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Link
                     to="/blog"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     Blog
                   </Link>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
-                <li>
+                <li className="group flex flex-col relative">
                   <Link
                     to="/contact-us"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     Contact US
                   </Link>
+                  <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
               </ul>
             </div>

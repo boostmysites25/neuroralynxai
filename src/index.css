@@ -223,20 +223,22 @@ html {
 }
 
 @keyframes borderGlow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(60, 129, 246, 0.3), 
-                inset 0 0 5px rgba(60, 129, 246, 0.3);
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(60, 129, 246, 0.3),
+      inset 0 0 5px rgba(60, 129, 246, 0.3);
     border-color: rgba(60, 129, 246, 0.5);
   }
   50% {
-    box-shadow: 0 0 20px rgba(60, 129, 246, 0.6), 
-                inset 0 0 10px rgba(60, 129, 246, 0.4);
+    box-shadow: 0 0 20px rgba(60, 129, 246, 0.6),
+      inset 0 0 10px rgba(60, 129, 246, 0.4);
     border-color: rgba(60, 129, 246, 0.8);
   }
 }
 
 @keyframes iconFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0);
   }
   25% {
@@ -285,8 +287,8 @@ html {
 }
 
 .card-glow-dark:hover {
-  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3), 
-              0 15px 35px -5px rgba(60, 129, 246, 0.2);
+  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3),
+    0 15px 35px -5px rgba(60, 129, 246, 0.2);
 }
 
 .card-glow-light {
@@ -295,8 +297,8 @@ html {
 }
 
 .card-glow-light:hover {
-  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3), 
-              0 15px 35px -5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 30px rgba(60, 129, 246, 0.3),
+    0 15px 35px -5px rgba(0, 0, 0, 0.15);
   background-color: rgba(255, 255, 255, 0.95);
 }
 
@@ -317,7 +319,11 @@ html {
 }
 
 .card-particles {
-  background-image: radial-gradient(circle, rgba(60, 129, 246, 0.3) 1px, transparent 1px);
+  background-image: radial-gradient(
+    circle,
+    rgba(60, 129, 246, 0.3) 1px,
+    transparent 1px
+  );
   background-size: 20px 20px;
   animation: particleEffect 15s linear infinite;
 }
@@ -427,13 +433,23 @@ html {
 
 /* Enhanced futuristic gradient effects */
 .futuristic-gradient {
-  background: linear-gradient(135deg, rgba(60, 129, 246, 0.05) 0%, rgba(0, 85, 128, 0.05) 50%, rgba(60, 129, 246, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(60, 129, 246, 0.05) 0%,
+    rgba(0, 85, 128, 0.05) 50%,
+    rgba(60, 129, 246, 0.05) 100%
+  );
   background-size: 400% 400%;
   transition: all 0.7s ease;
 }
 
 .futuristic-gradient:hover {
-  background: linear-gradient(135deg, rgba(60, 129, 246, 0.2) 0%, rgba(0, 85, 128, 0.2) 50%, rgba(60, 129, 246, 0.2) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(60, 129, 246, 0.2) 0%,
+    rgba(0, 85, 128, 0.2) 50%,
+    rgba(60, 129, 246, 0.2) 100%
+  );
   animation: gradientShift 5s ease infinite;
 }
 
@@ -481,4 +497,17 @@ html {
 .blog-card:hover::before {
   opacity: 1;
   animation: shimmerBlog 2s infinite;
+}
+
+.spin {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

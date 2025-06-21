@@ -11,7 +11,6 @@ import Faq from "../Components/Faq";
 import LeadForm from "../Components/landingpage/LeadForm";
 import Portfolio from "../Components/Portfolio";
 import LandingBanner from "../Components/landingpage/LandingBanner";
-import homeaboutimg from "../assets/images/homeaboutimg.webp";
 import webImg from "../assets/images/web-dev.webp";
 import appImg from "../assets/images/app-dev.jpg";
 import homeAboutImg from "../assets/images/homeaboutimg.webp";

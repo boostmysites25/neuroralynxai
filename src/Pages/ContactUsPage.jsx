@@ -368,7 +368,7 @@ const ContactUsPage = () => {
                 >
                   {spinner ? (
                     <>
-                      <Clock className="w-5 h-5 animate-spin" />
+                      <Clock className="w-5 h-5 spin" />
                       <span>Sending...</span>
                     </>
                   ) : (

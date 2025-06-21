@@ -26,13 +26,13 @@ const LandingBanner = ({ page }) => {
   // Dynamic content based on page
   const content = {
     "web-development": {
-      label: "Web Development",
+      label: "Best Web Development Services",
       heading: "Build Scalable, High-Performance Websites That Convert",
       description:
         "We craft responsive, SEO-optimized websites with engaging interfaces that turn visitors into loyal customers. From landing pages to complex platforms, we bring your vision online.",
     },
     "app-development": {
-      label: "App Development",
+      label: "Best App Development Services",
       heading: "Transform Ideas into Powerful Mobile Experiences",
       description:
         "We design and develop cross-platform and native apps that are fast, secure, and tailored to user needs—delivering intuitive functionality with seamless performance.",
@@ -78,7 +78,7 @@ const LandingBanner = ({ page }) => {
           <div className="flex flex-col gap-4 items-start justify-center relative z-[1]">
             <p
               data-aos="fade-right"
-              className="bg-[#ECECF2] rounded p-1 text-gray-900 text-sm"
+              className="text-xl text-gray-900 font-semibold"
             >
               {label}
             </p>
