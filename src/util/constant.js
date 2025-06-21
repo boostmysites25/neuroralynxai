@@ -52,18 +52,18 @@ export const companyDetails = {
     "Ground floor, 51, 3rd B Cross, Doddanekundi, Rd Gururaja La yout Vibhutipura Extension Doddanekk, Bangalore, Karnataka, 560037",
   socialLinks: [
     {
-      href: "",
+      href: "https://www.linkedin.com/company/neuroralynxai",
       icon: FaLinkedin,
     },
     {
-      href: "",
+      href: "https://www.instagram.com/neuroralynxai?utm_source=qr&igsh=OHdjOG93bTRmcGJk",
       icon: FaInstagram,
     },
-    { href: "", icon: FaXTwitter },
-    {
-      href: "",
-      icon: FaYoutube,
-    },
+    // { href: "", icon: FaXTwitter },
+    // {
+    //   href: "",
+    //   icon: FaYoutube,
+    // },
   ],
   whatsapp: "",
 };
