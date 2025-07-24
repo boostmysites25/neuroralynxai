@@ -12,11 +12,14 @@ import Industries from "../Components/Industries";
 import Ourvalues from "../Components/Ourvalues";
 import Portfolio from "../Components/Portfolio";
 import LeadForm from "../Components/landingpage/LeadForm";
+import SEOHelmet from "../Components/SEOHelmet";
+
 const HomePage = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <SEOHelmet page="home" />
       <HomePageBanner />
       <section>
         <div className="wrapper grid md:grid-cols-2 gap-10 sm:pt-[4rem] pt-[2rem] paddingbottom">
@@ -31,7 +34,7 @@ const HomePage = () => {
               Shaping Digital Futures with Purposeful Technology
             </h1>
             <p className="desc mt-4" data-aos="fade-left">
-              At <b>NeuroraLynx AI</b>, we don’t just build software—we create
+              At <b>NeuroraLynx AI</b>, we don't just build software—we create
               digital ecosystems that elevate brands and fuel growth. Our
               expertise lies in delivering smart, scalable solutions that help
               businesses stay agile in a fast-changing world. From startups to

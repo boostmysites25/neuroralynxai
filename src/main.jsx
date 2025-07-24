@@ -4,12 +4,16 @@ import "./index.css";
 import AppRouter from "./App";
 import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./Context/ThemeContext";
+import { HelmetProvider } from "react-helmet-async";
 import "keen-slider/keen-slider.min.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
-    <ThemeProvider>
-      <RouterProvider router={AppRouter} />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <RouterProvider router={AppRouter} />
+      </ThemeProvider>
+    </HelmetProvider>
   </StrictMode>
 );

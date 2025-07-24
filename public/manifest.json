@@ -1,0 +1,27 @@
+{
+  "name": "NeuroraLynx AI - Artificial Intelligence Solutions",
+  "short_name": "NeuroraLynx AI",
+  "description": "Leading AI development company offering cutting-edge artificial intelligence solutions, mobile app development, web development, and automation services.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2B5797",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/fav.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/fav.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+} 

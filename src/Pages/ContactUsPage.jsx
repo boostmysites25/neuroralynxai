@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import RoundedHeader from "../Components/RoundedHeader";
 import { useTheme } from "../Context/ThemeContext";
+import SEOHelmet from "../Components/SEOHelmet";
 
 const ContactUsPage = () => {
   const [spinner, setSpinner] = useState(false);
@@ -74,6 +75,7 @@ const ContactUsPage = () => {
 
   return (
     <div className="min-h-screen dark:bg-darkblack bg-gray-50 dark:text-white text-darkbackground">
+      <SEOHelmet page="contact" />
       {/* Hero Section with Background Gradient */}
       <div className="relative pt-[7rem] pb-16 overflow-hidden">
         <div

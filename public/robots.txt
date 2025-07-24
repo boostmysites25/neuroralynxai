@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://neuroralynxai.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Disallow certain paths if any (currently allowing all)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important pages
+Allow: /
+Allow: /services
+Allow: /about-us
+Allow: /contact-us
+Allow: /portfolio
+Allow: /blog
+
+# Additional directives for better crawling
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: / 

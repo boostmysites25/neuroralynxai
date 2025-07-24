@@ -8,6 +8,8 @@ import UnlockEfficiency from "../Components/UnlockEfficiency";
 import Faq from "../Components/Faq";
 import BlogBody from "../Components/blog/blogBody";
 import { blogPosts } from "../util/blog";
+import SEOHelmet from "../Components/SEOHelmet";
+
 const AboutUsPage = () => {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
@@ -20,6 +22,7 @@ const AboutUsPage = () => {
   const randomPosts = getRandomPosts(blogPosts, 3);
   return (
     <div className=" bg-white dark:bg-darkblack">
+      <SEOHelmet page="about" />
       <section className="relative pt-[7rem]  overflow-hidden">
         <div
           className={`absolute ${

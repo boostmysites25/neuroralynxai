@@ -4,6 +4,7 @@ import { Circle } from "lucide-react";
 import { useTheme } from "../Context/ThemeContext";
 import { useParams, Link } from "react-router-dom";
 import { LoadingSpinner } from "../Components/Loader";
+import SEOHelmet from "../Components/SEOHelmet";
 
 const Loading = () => (
   <div className="text-center py-20 text-xl">Loading...</div>
@@ -26,6 +27,7 @@ const ServiceDetails = () => {
 
   return (
     <div className="dark:bg-darkblack">
+      <SEOHelmet page="serviceDetails" subPage={title} />
       <div className="pt-[4.5rem]">
         <section
           className="flex relative justify-start bg-darkblack p-10 items-end h-[15rem] sm:h-[30rem] bg-current bg-cover sm:bg-cover bg-no-repeat bg-center"

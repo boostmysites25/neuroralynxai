@@ -5,6 +5,7 @@ import ServicesGrid from "../Components/ServicesGrid";
 import HowWeWork from "../Components/HowWeWork";
 import Testimonials from "../Components/Testimonials";
 import servicebanner from "../assets/images/servicebanner.jpg";
+import SEOHelmet from "../Components/SEOHelmet";
 
 const ServicePage = () => {
   const { theme } = useTheme();
@@ -12,6 +13,7 @@ const ServicePage = () => {
 
   return (
     <div className="bg-white dark:bg-darkblack">
+      <SEOHelmet page="services" />
       <section className="pt-[4rem]">
         <div
           className={`absolute ${
