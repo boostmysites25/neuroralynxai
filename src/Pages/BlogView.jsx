@@ -3,7 +3,7 @@ import ViewBlogHeader from "../Components/blog/ViewBlogHeader";
 import { useTheme } from "../Context/ThemeContext";
 import ViewBlogContent from "../Components/blog/viewBlogContent";
 import { useParams } from "react-router-dom";
-import { blogPosts } from "../util/blogs";
+import { blogPosts } from "../util/blog";
 import BlogBody from "../Components/blog/blogBody";
 import Faq from "../Components/Faq";
 import RoundedHeader from "../Components/RoundedHeader";

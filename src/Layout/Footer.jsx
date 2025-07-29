@@ -71,7 +71,7 @@ const Footer = () => {
                     to="/blogs"
                     className="text-white hover:text-gray-300 text-sm"
                   >
-                    Blog
+                    Blogs
                   </Link>
                   <span className="absolute -bottom-0.5 w-0 h-[1.4px] bg-gray-300 group-hover:w-full transition-all duration-300 ease-in-out" />
                 </li>
