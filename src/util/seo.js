@@ -88,13 +88,13 @@ export const seoConfig = {
     title: "AI Development Blog | NeuroraLynx AI - Latest AI Trends & Insights",
     description: "Stay updated with the latest artificial intelligence trends, machine learning insights, and AI development best practices from NeuroraLynx AI's expert team.",
     keywords: "AI blog, artificial intelligence trends, machine learning insights, AI development tips, neural network articles, AI technology news, NeuroraLynx AI blog",
-    url: "https://neuroralynxai.com/blog",
+    url: "https://neuroralynxai.com/blogs",
     structuredData: {
       "@context": "https://schema.org",
       "@type": "Blog",
       "name": "NeuroraLynx AI Blog",
       "description": "Latest insights and trends in artificial intelligence and machine learning",
-      "url": "https://neuroralynxai.com/blog",
+      "url": "https://neuroralynxai.com/blogs",
       "publisher": {
         "@type": "Organization",
         "name": "NeuroraLynx AI"

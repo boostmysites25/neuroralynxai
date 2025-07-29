@@ -60,7 +60,7 @@ const LandingHeader = () => {
             </Scrolllink>
 
             <Link
-              to="/blog"
+              to="/blogs"
               className="text-black dark:text-white hover:text-primary dark:hover:text-primary capitalize cursor-pointer"
             >
               Blog
@@ -142,7 +142,7 @@ const LandingHeader = () => {
               Services
             </Scrolllink>
             <Link
-              to="/blog"
+              to="/blogs"
               className="block px-3  pt-2 pb-3 rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Blog

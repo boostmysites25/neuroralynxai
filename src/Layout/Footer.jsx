@@ -68,7 +68,7 @@ const Footer = () => {
                 </li>
                 <li className="group flex flex-col relative">
                   <Link
-                    to="/blog"
+                    to="/blogs"
                     className="text-white hover:text-gray-300 text-sm"
                   >
                     Blog

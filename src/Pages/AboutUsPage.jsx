@@ -7,7 +7,7 @@ import OurStory from "../Components/OurStory";
 import UnlockEfficiency from "../Components/UnlockEfficiency";
 import Faq from "../Components/Faq";
 import BlogBody from "../Components/blog/blogBody";
-import { blogPosts } from "../util/blog";
+import { blogPosts } from "../util/blogs";
 import SEOHelmet from "../Components/SEOHelmet";
 
 const AboutUsPage = () => {
