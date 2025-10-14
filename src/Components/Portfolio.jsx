@@ -2,6 +2,7 @@ import { useKeenSlider } from "keen-slider/react";
 import {
   appDevelopmentPortfolio,
   webDevelopmentPortfolio,
+  aiProjectsPortfolio,
 } from "../util/constant";
 import RoundedHeader from "./RoundedHeader";
 import { Link } from "react-router-dom";
@@ -9,9 +10,11 @@ const animation = { duration: 60000, easing: (t) => t };
 
 const Portfolio = ({ page }) => {
   const isWeb = page === "web-development";
+  const isAI = page === "artificial-intelligence";
 
-  const displayedWebPortfolio = isWeb || !page ? webDevelopmentPortfolio : [];
-  const displayedAppPortfolio = !isWeb || !page ? appDevelopmentPortfolio : [];
+  const displayedWebPortfolio = isWeb || (!page && !isAI) ? webDevelopmentPortfolio : [];
+  const displayedAppPortfolio = (!isWeb && !isAI) || !page ? appDevelopmentPortfolio : [];
+  const displayedAIPortfolio = isAI || !page ? aiProjectsPortfolio : [];
 
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -49,6 +52,37 @@ const Portfolio = ({ page }) => {
     renderMode: "performance",
     drag: true,
     rtl: true,
+    slides: {
+      perView: 1,
+      spacing: 20,
+    },
+    breakpoints: {
+      "(max-width: 639px)": { slides: { perView: 1, spacing: 15 } },
+      "(min-width: 640px) and (max-width: 767px)": {
+        slides: { perView: 2, spacing: 20 },
+      },
+      "(min-width: 768px) and (max-width: 1023px)": {
+        slides: { perView: 2.5, spacing: 20 },
+      },
+      "(min-width: 1024px)": { slides: { perView: 4, spacing: 25 } },
+    },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    rubberband: true,
+    mode: "snap",
+  });
+
+  const [sliderRef3] = useKeenSlider({
+    loop: true,
+    renderMode: "performance",
+    drag: true,
     slides: {
       perView: 1,
       spacing: 20,
@@ -118,6 +152,60 @@ const Portfolio = ({ page }) => {
                               <h4 className="text-xl font-bold text-white mb-2">
                                 {obj.title}
                               </h4>
+                              <div className="w-0 h-0.5 bg-white hover:w-full"></div>
+                            </div>
+
+                            <div className="absolute top-4 right-4 bg-primary/80 text-white text-xs font-bold py-1 px-2 rounded-full opacity-0 hover:opacity-100 z-30">
+                              Explore
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {displayedAIPortfolio.length > 0 && (
+            <div className="mt-20">
+              <div className="container mx-auto">
+                <h3
+                  className="main-title text-center mb-12 relative pb-6"
+                  data-aos="fade-up"
+                >
+                  AI Projects
+                </h3>
+              </div>
+              <div className="relative">
+                <div ref={sliderRef3} className="keen-slider px-2 py-4">
+                  {displayedAIPortfolio
+                    .concat(displayedAIPortfolio)
+                    .map((obj) => (
+                      <div className="keen-slider__slide" key={obj.id}>
+                        <Link
+                          to={obj.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl bg-gradient-to-br from-slate-900 to-slate-800 dark:from-slate-800 dark:to-slate-900"
+                        >
+                          <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 z-10"></div>
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 z-20"></div>
+
+                          <div className="relative">
+                            <img
+                              src={obj.image}
+                              alt={obj.title}
+                              className="w-full aspect-square object-cover"
+                            />
+
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-30">
+                              <h4 className="text-xl font-bold text-white mb-2">
+                                {obj.title}
+                              </h4>
+                              <p className="text-sm text-gray-300 mb-2">
+                                {obj.category}
+                              </p>
                               <div className="w-0 h-0.5 bg-white hover:w-full"></div>
                             </div>
 

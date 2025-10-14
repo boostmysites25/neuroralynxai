@@ -522,3 +522,39 @@ export const appDevelopmentPortfolio = [
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];
+
+// Import AI project images
+import findMyAITool from "../assets/images/portfolio/ai/Find My AI Tool.png";
+import vyroAI from "../assets/images/portfolio/ai/AI Art Generator – Vyro AI.webp";
+import musicly from "../assets/images/portfolio/ai/Musicly – AI Music Generator.webp";
+
+// AI Projects portfolio
+export const aiProjectsPortfolio = [
+  {
+    id: 1,
+    image: findMyAITool,
+    title: "Find My AI Tool",
+    description:
+      "Discovery platform offering curated listings, reviews, and rankings of AI tools across categories like design, automation, and productivity",
+    link: "https://findmyaitool.com",
+    category: "AI Directory / SaaS Review",
+  },
+  {
+    id: 2,
+    image: vyroAI,
+    title: "AI Art Generator – Vyro AI",
+    description:
+      "App using machine learning and neural style transfer to convert photos into stunning AI-generated artwork with multiple artistic styles",
+    link: "https://vyro.ai",
+    category: "Art / Photo Editing",
+  },
+  {
+    id: 3,
+    image: musicly,
+    title: "Musicly – AI Music Generator",
+    description:
+      "App transforming text prompts and moods into original AI-generated music with background tracks and theme-based soundscapes",
+    link: "https://musicly.ai",
+    category: "AI Music / Audio Creation",
+  },
+];
