@@ -6,10 +6,9 @@ import {
 } from "../util/constant";
 
 const Portfolio = () => {
-  const [activePortfolio, setActivePortfolio] = useState("all");
+  const [activePortfolio, setActivePortfolio] = useState("web");
 
   const portfolioTypes = [
-    { key: "all", label: "All Projects" },
     { key: "web", label: "Web Projects" },
     { key: "ai", label: "AI Projects" },
     { key: "app", label: "Mobile Apps" },
@@ -17,12 +16,6 @@ const Portfolio = () => {
 
   const getCurrentPortfolio = () => {
     switch (activePortfolio) {
-      case "all":
-        return [
-          ...aiProjectsPortfolio,
-          ...webDevelopmentPortfolio,
-          ...appDevelopmentPortfolio,
-        ];
       case "web":
         return webDevelopmentPortfolio;
       case "ai":
@@ -30,11 +23,7 @@ const Portfolio = () => {
       case "app":
         return appDevelopmentPortfolio;
       default:
-        return [
-          ...webDevelopmentPortfolio,
-          ...aiProjectsPortfolio,
-          ...appDevelopmentPortfolio,
-        ];
+        return webDevelopmentPortfolio;
     }
   };
 
