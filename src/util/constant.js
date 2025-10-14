@@ -548,13 +548,5 @@ export const aiProjectsPortfolio = [
     link: "https://vyro.ai",
     category: "Art / Photo Editing",
   },
-  {
-    id: 3,
-    image: musicly,
-    title: "Musicly – AI Music Generator",
-    description:
-      "App transforming text prompts and moods into original AI-generated music with background tracks and theme-based soundscapes",
-    link: "https://musicly.ai",
-    category: "AI Music / Audio Creation",
-  },
+
 ];
