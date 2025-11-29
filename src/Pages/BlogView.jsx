@@ -15,6 +15,16 @@ function BlogView() {
   const blogId = Number(id);
   const blog = blogPosts.find((post) => post.id === blogId);
 
+  if (!blog) {
+    return (
+      <div className="relative bg-white dark:bg-darkblack overflow-x-hidden max-w-screen">
+        <div className="relative max-w-3xl mx-auto px-4 pt-[7rem]">
+          <h1 className="text-2xl font-bold dark:text-white">Blog not found</h1>
+        </div>
+      </div>
+    );
+  }
+
   function getRandomPosts(posts, count, excludeId) {
     const filteredPosts = posts.filter((post) => post.id !== excludeId);
     const shuffled = filteredPosts.sort(() => 0.5 - Math.random());
@@ -37,20 +47,24 @@ function BlogView() {
           readTime={blog.readTime}
           date={blog.date}
         />
-        <ViewBlogContent />
+        <ViewBlogContent content={blog.content} />
       </div>
-      <div className="wrapper paddingtop">
-        <div className="flex justify-center items-center flex-col">
-          <RoundedHeader title={"Recent Posts"} />
-          <h1 data-aos="fade-up" className="main-title my-3">
-            Related Posts
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-5 dark:bg-darkblack">
-            {randomPosts.map((post, index) => (
-              <BlogBody key={index} {...post} passkey={true} />
-            ))}
+      {randomPosts.length > 0 && (
+        <div className="wrapper paddingtop">
+          <div className="flex justify-center items-center flex-col">
+            <RoundedHeader title={"Recent Posts"} />
+            <h1 data-aos="fade-up" className="main-title my-3">
+              Related Posts
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-5 dark:bg-darkblack">
+              {randomPosts.map((post, index) => (
+                <BlogBody key={index} {...post} passkey={true} />
+              ))}
+            </div>
           </div>
         </div>
+      )}
+      <div className="wrapper paddingtop">
         <Faq />
       </div>
     </div>
