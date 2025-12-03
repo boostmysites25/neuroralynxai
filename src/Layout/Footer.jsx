@@ -22,11 +22,11 @@ const Footer = () => {
                 <img src={logo} alt="logo" className="w-[15rem]" />
               </div>
               <p className="text-white text-sm max-w-xs">
-                At NeuroraLynx AI, we're dedicated to driving your business
-                forward with innovative software solutions. With a passion for
-                technology and a commitment to excellence, we specialize in
-                delivering tailored software products and services to meet your
-                unique needs.
+                At NeuroraLynx AI, we're focused on helping your business
+                grow with innovative software solutions. We combine our passion for
+                technology with a commitment to quality, specializing in
+                delivering custom software products and services that meet your
+                specific needs.
               </p>
               <div className="col-span-1">
                 <div className="flex space-x-4 mt-8">

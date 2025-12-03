@@ -51,8 +51,8 @@ const VisionMission = () => {
             />
             <div>
               <p className="desc">
-                <strong>Let’s Create Something Exceptional</strong> - Reach out
-                to us today, and let’s start building something extraordinary
+                <strong>Let's Create Something Great Together</strong> Contact us
+                today, and let's start building something amazing
                 together.
               </p>
             </div>

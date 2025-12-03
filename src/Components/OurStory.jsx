@@ -8,20 +8,20 @@ const OurStory = () => {
             data-aos="fade-right"
             className="text-[32px] text-primary font-bold"
           >
-            Step into the Godverse
+            Our Story
           </h3>
           <p className="desc mt-4" data-aos="fade-right">
-            At NeuroraLynx AI, we aren’t just another tech firm—we are architects of
-            the future, cosmic visionaries, and AI strategists committed to
-            expanding human potential across all frontiers. Join us to discover
-            how leading-edge technology—powered by quantum insights—can
-            transform your business, your world, and the universe itself.
+            At NeuroraLynx AI, we're more than just a tech company. We're a team of
+            problem solvers, innovators, and strategists committed to
+            helping businesses reach their full potential. We work with you to discover
+            how modern technology can
+            transform your business and help you achieve your goals.
             <br />
             <br />
-            Experience cosmic innovation with NeuroraLynx AI. From AI-powered
-            solutions to AR/VR, mobile apps, and quantum-level data analytics,
-            we help businesses worldwide transcend boundaries. Join us to expand
-            your vision across all continents—and beyond.
+            We bring innovation to every project. From AI-powered
+            solutions to AR/VR, mobile apps, and advanced data analytics,
+            we help businesses around the world break through limitations and grow. Work with us to expand
+            your possibilities and reach new heights.
           </p>
         </div>
         <img data-aos="fade-left" src={visionmissionimg} alt="" />

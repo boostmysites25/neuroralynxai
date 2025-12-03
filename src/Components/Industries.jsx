@@ -5,7 +5,7 @@ const Industries = () => {
   return (
     <div className="wrapper paddingtop paddingbottom">
       <h2 className="main-title text-center mb-10" data-aos="fade-up">
-        AI Solutions Engineered for Industry Leaders
+        AI Solutions Built for Your Industry
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

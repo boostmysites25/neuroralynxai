@@ -16,21 +16,21 @@ const Highlights = () => {
           <div className="flex flex-col gap-5">
             <RoundedHeader title={"Highlights"} bg={true} />
             <h1 className="main-title leading-tight" data-aos="fade-right">
-              Driving Digital Evolution Through Intelligent Innovation
+              Building Smarter Solutions Through Innovation
             </h1>
             <p className="desc" data-aos="fade-right">
-              At Gravity AI Technologies, we engineer smart, adaptive solutions
-              that align with your business objectives. From intelligent automation
-              to predictive analytics, our AI-driven systems are built to scale with
-              you. Transform workflows, unlock new efficiencies, and prepare for a
-              data-powered future.
+              At NeuroraLynx AI, we create smart, adaptable solutions
+              that match your business goals. From intelligent automation
+              to predictive analytics, our AI systems are built to grow with
+              you. Improve workflows, discover new efficiencies, and get ready for a
+              data-driven future.
             </p>
             <button
               data-aos="fade-right"
               onClick={() => navigateTo("/contact-us")}
               className="secondary-btn-white w-fit"
             >
-              Let’s Talk Innovation
+              Let's Talk
             </button>
           </div>
 

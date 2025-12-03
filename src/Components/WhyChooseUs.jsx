@@ -8,10 +8,10 @@ const WhyChooseUs = () => {
       <div className="paddingtop paddingbottom wrapper grid md:grid-cols-2 gap-10">
         <div>
           <h1 data-aos="fade-right" className="main-title">
-            The fire that fuels our passion.
+            What Drives Us Every Day
           </h1>
           <p className="mt-3 desc">
-            At NeuroraLynx AI, we believe in the power of:
+            At NeuroraLynx AI, we believe in:
           </p>
           <ul className="mt-6">
             {whyChooseUs.map((item, index) => {

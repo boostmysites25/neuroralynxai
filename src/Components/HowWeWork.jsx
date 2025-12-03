@@ -27,12 +27,12 @@ const HowWeWork = () => {
           {/* Section Header */}
           <div className="text-center mb-12">
             <h1 className="main-title" data-aos="fade-up">
-              Build Smarter with NeuroraLynx AI
+              How We Work With You
             </h1>
             <p className="desc" data-aos="fade-up">
-              We help businesses streamline operations and unlock new
-              opportunities using custom AI strategies and intelligent
-              automation—all from a single, powerful platform.
+              We help businesses improve operations and discover new
+              opportunities using custom AI strategies and smart
+              automation, all from one powerful platform.
             </p>
           </div>
 
@@ -54,12 +54,12 @@ const HowWeWork = () => {
                 Our Process
               </h2>
               <p className="desc" data-aos="fade-right">
-                Our collaboration starts by understanding your vision and
-                pinpointing the exact challenges you're facing. From there, we
-                design and build scalable AI-driven systems tailored to your
-                needs—balancing automation, analytics, and intuitive UX. We
-                iterate quickly, test thoroughly, and provide ongoing support to
-                ensure your solution keeps delivering long-term value.
+                We start by understanding your goals and
+                identifying the specific challenges you're facing. Then, we
+                design and build scalable systems tailored to your
+                needs, balancing automation, analytics, and user-friendly design. We
+                work quickly, test carefully, and provide ongoing support to
+                make sure your solution continues to deliver value over time.
               </p>
               <button
                 onClick={() => navigateTo("/contact-us")}
@@ -80,12 +80,12 @@ const HowWeWork = () => {
               Focused on the Future
             </h2>
             <p className="desc" data-aos="fade-up">
-              NeuroraLynx AI is driven by a mission to bring responsible AI to
-              industries that need it most. Our roadmap includes innovation
-              across key sectors such as healthcare, finance, energy, education,
-              smart cities, and public infrastructure. We’re also exploring new
-              frontiers in robotics, defense, and advanced digital ecosystems,
-              building AI that grows with your business and adapts to tomorrow’s
+              NeuroraLynx AI is focused on bringing practical AI solutions to
+              industries that can benefit most. We're working on innovation
+              across important sectors like healthcare, finance, energy, education,
+              smart cities, and public infrastructure. We're also exploring new
+              areas in robotics, security, and advanced digital systems,
+              building AI that grows with your business and adapts to future
               challenges.
             </p>
           </section>
@@ -99,11 +99,11 @@ const HowWeWork = () => {
               Partner With Us
             </h2>
             <p className="desc" data-aos="fade-up">
-              Every idea has the potential to disrupt, inspire, and transform.
-              At NeuroraLynx AI, we combine your vision with our deep technical
-              expertise to create solutions that are not just smart—but
-              strategic. Let’s collaborate to turn innovation into measurable
-              impact.
+              Every idea has the potential to make a real difference.
+              At NeuroraLynx AI, we combine your vision with our technical
+              expertise to create solutions that are both smart and
+              practical. Let's work together to turn your ideas into real
+              results.
             </p>
           </section>
         </div>

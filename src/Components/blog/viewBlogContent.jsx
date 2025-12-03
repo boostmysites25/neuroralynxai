@@ -5,6 +5,21 @@ function ViewBlogContent({ content }) {
     return null;
   }
 
+  // If content is a string (HTML from API), render it directly
+  if (typeof content === "string") {
+    return (
+      <div
+        className="blog-content prose prose-lg dark:prose-invert max-w-none"
+        data-aos="fade-up"
+        dangerouslySetInnerHTML={{ __html: content }}
+        style={{
+          color: "inherit",
+        }}
+      />
+    );
+  }
+
+  // If content is an object (legacy format), render structured content
   return (
     <div className="">
       <section className="mb-8">

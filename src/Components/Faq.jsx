@@ -35,9 +35,9 @@ const Faq = () => {
               Frequently Asked Questions
             </h1>
             <p className="desc" data-aos="fade-right">
-              Welcome to the NeuroraLynx AI FAQ section, where we explore how this
-              platform is shaping the future of human evolution through AI,
-              immersive storytelling, and cosmic intelligence.
+              Welcome to the NeuroraLynx AI FAQ section. Here you'll find answers to common questions about our
+              services, how we work, and how we can help your business succeed with AI
+              and modern technology solutions.
             </p>
             <button
               onClick={() => navigateTo("/contact-us")}

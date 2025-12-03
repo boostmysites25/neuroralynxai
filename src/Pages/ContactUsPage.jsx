@@ -87,16 +87,16 @@ const ContactUsPage = () => {
           <div className="flex flex-col items-center text-center mb-12">
             <RoundedHeader title={"Contact Us"} />
             <h1 className="main-title mt-4" data-aos="fade-up">
-              Ready to Ignite Your Brand?
+              Ready to Get Started?
             </h1>
             <p
               className="desc max-w-2xl mx-auto mt-4"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Have a project in mind or want to explore how we can help your
-              business? Reach out to our team and let's start a conversation
-              about your digital future.
+              Have a project in mind or want to learn how we can help your
+              business? Contact our team and let's start a conversation
+              about your digital goals.
             </p>
           </div>
         </div>
@@ -419,16 +419,16 @@ const ContactUsPage = () => {
         <div className="wrapper">
           <div className="text-center mb-12">
             <h2 className="section-heading mb-4" data-aos="fade-up">
-              Ready to Transform Your Digital Presence?
+              Ready to Improve Your Digital Presence?
             </h2>
             <p
               className="desc max-w-2xl mx-auto"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              Whether you're looking to build a new application, redesign your
+              Whether you want to build a new application, redesign your
               website, or implement AI solutions, our team is ready to bring
-              your vision to life.
+              your ideas to life.
             </p>
           </div>
 

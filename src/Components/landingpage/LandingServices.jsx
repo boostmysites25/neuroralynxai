@@ -19,25 +19,25 @@ const LandingServices = ({ page }) => {
     "web-development": {
       header: "Web Development Services",
       subheading:
-        "Crafting Intelligent Websites that Deliver Performance and Results",
+        "Building Websites That Perform and Deliver Results",
       description:
-        "We develop responsive, SEO-friendly, and scalable websites that blend creativity with functionality. From corporate websites to custom platforms, our solutions help you build a strong digital identity.",
+        "We create responsive, SEO-friendly, and scalable websites that combine creativity with functionality. From corporate websites to custom platforms, our solutions help you build a strong online presence.",
     },
     "app-development": {
       header: "App Development Services",
       subheading:
-        "Building Smart, Scalable Mobile Apps for Every Platform",
+        "Building Mobile Apps That Work on Every Platform",
       description:
-        "We specialize in building cross-platform and native mobile apps that are fast, secure, and tailored to user needs. From ideation to launch, we help you create experiences that users love.",
+        "We specialize in building cross-platform and native mobile apps that are fast, secure, and designed for your users. From concept to launch, we help you create experiences that users love.",
     },
   };
 
   const { header, subheading, description } =
     content[page] || {
       header: "Our Services",
-      subheading: "Intelligent Digital Solutions for Web and Mobile",
+      subheading: "Smart Digital Solutions for Web and Mobile",
       description:
-        "We offer future-ready web and app development services powered by AI and innovation to help you achieve your digital goals.",
+        "We offer modern web and app development services powered by AI and innovation to help you achieve your digital goals.",
     };
 
   return (

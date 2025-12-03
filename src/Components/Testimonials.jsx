@@ -25,7 +25,7 @@ const Testimonials = () => {
                 <p className="desc !font-medium mb-4">"{testimonial.quote}"</p>
                 <div>
                   <p className="desc !font-medium mb-2">
-                    — {testimonial.author}
+                      {testimonial.author}
                   </p>
                   <StarRating rating={testimonial.rating} />
                 </div>

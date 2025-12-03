@@ -62,12 +62,11 @@ const HomePageBanner = () => {
               data-aos="fade-right"
               className="main-title dark:!text-gray-900 font-bold !leading-tight"
             >
-              Empowering Your Digital Presence with Cutting-Edge Solutions
+              Building Digital Solutions That Help Your Business Grow
             </h1>
             <p data-aos="fade-right" className="desc !text-black/80">
-              At NeuroraLynx AI, we specialize in creating innovative and
-              user-centric digital solutions that not only look great but also
-              drive results.
+              At NeuroraLynx AI, we create digital solutions that are both innovative and
+              practical. We build products that look great and deliver real results for your business.
             </p>
             <div data-aos="fade-right" className="flex gap-4 mt-10">
               <Link to="/about-us" className="primary-btn">

@@ -31,15 +31,15 @@ const HomePage = () => {
           />
           <div>
             <h1 className="main-title leading-tight" data-aos="fade-left">
-              Shaping Digital Futures with Purposeful Technology
+              Building Digital Solutions That Make a Difference
             </h1>
             <p className="desc mt-4" data-aos="fade-left">
-              At <b>NeuroraLynx AI</b>, we don't just build software—we create
-              digital ecosystems that elevate brands and fuel growth. Our
-              expertise lies in delivering smart, scalable solutions that help
-              businesses stay agile in a fast-changing world. From startups to
-              enterprises, we tailor every line of code and design detail to
-              suit your vision.
+              At <b>NeuroraLynx AI</b>, we build more than just software. We create
+              digital solutions that help your business grow and succeed. Our
+              team delivers smart, scalable solutions that help
+              businesses stay competitive in today's fast-paced world. From startups to
+              large companies, we customize every aspect of our work to
+              match your needs and goals.
             </p>
           </div>
         </div>
@@ -50,7 +50,7 @@ const HomePage = () => {
         <div className="flex wrapper flex-col gap-4 items-center w-full paddingtop">
           <RoundedHeader title={"Our Services"} />
           <h1 className="main-title text-center" data-aos="fade-up">
-            Our Services are Tailored to Your Needs
+            Services Designed for Your Success
           </h1>
         </div>
       </section>

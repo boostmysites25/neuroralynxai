@@ -2,14 +2,7 @@ import {
   Smartphone,
   Users,
   Code,
-  Cpu,
-  Bot,
-  Database,
-  Cloud,
-  Box,
   MemoryStick,
-  Gamepad2,
-  Network,
 } from "lucide-react";
 import file from "../assets/images/png/file.png";
 import graph from "../assets/images/png/graph.png";
@@ -37,19 +30,17 @@ import {
   FaAppStoreIos,
   FaInstagram,
   FaLinkedin,
-  FaYoutube,
 } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import { SiFlutter } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
-import { FaXTwitter } from "react-icons/fa6";
 
 export const companyDetails = {
   name: "NeuroraLynx AI",
   email: "info@neuroralynxai.com",
   phone: "+91-7846815456",
   address:
-    "Ground floor, 51, 3rd B Cross, Doddanekundi, Rd Gururaja La yout Vibhutipura Extension Doddanekk, Bangalore, Karnataka, 560037",
+    "Unit 101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru, Karnataka 560008",
   socialLinks: [
     {
       href: "https://www.linkedin.com/company/neuroralynxai",
@@ -104,16 +95,16 @@ export const services = [
 ];
 
 export const whyChooseUs = [
-  "Innovative Design Solutions: Our branding experts think outside the box, delivering breakthrough creative strategies that challenge conventions and elevate brands beyond the competition.",
-  "Team-Based Brand Development: We harness collective creativity through cross-functional collaboration, combining diverse expertise to build powerful brand identities that resonate with audiences.",
-  "Measurable Business Impact: We focus on strategic brand development that drives real-world results - increasing engagement, building loyalty, and delivering measurable ROI for your business growth.",
-  "Future-Proof Marketing: Our team leverages emerging marketing technologies and digital trends to create adaptive branding solutions that keep your business ahead in evolving markets.",
+  "Innovative Design Solutions: Our team brings fresh perspectives to every project, creating strategies that stand out and help your brand connect with customers in meaningful ways.",
+  "Collaborative Approach: We work closely with you throughout the process, combining our technical expertise with your vision to build solutions that truly represent your business.",
+  "Proven Results: We focus on delivering solutions that make a real difference, helping you engage customers, build trust, and grow your business with measurable outcomes.",
+  "Staying Ahead: We keep up with the latest technologies and trends, ensuring your digital presence remains current and competitive in today's fast-paced market.",
 ];
 
 export const testimonials = [
   {
     quote:
-      "They didn’t just make our platform look good—they made it feel right. The interface is intuitive, the experience seamless. Our user retention has gone up significantly since the redesign.",
+      "They didn’t just make our platform look good they made it feel right. The interface is intuitive, the experience seamless. Our user retention has gone up significantly since the redesign.",
     author: "Aarav Kapoor, Product Manager of Nexus Tech",
     rating: 5,
     gridClass: "col-span-1",
@@ -152,78 +143,78 @@ export const highlights = [
   {
     id: 1,
     icon: file,
-    title: "Next-Gen AI That Grows With You",
+    title: "AI Solutions That Scale With Your Business",
     description:
-      "Harness adaptable, self-learning AI systems designed to scale alongside your business. From agile startups to established enterprises, our solutions evolve with your needs.",
+      "Our AI systems are built to grow with you. Whether you're just starting out or running a large enterprise, our solutions adapt to your changing needs and help you stay competitive.",
   },
   {
     id: 2,
     icon: graph,
-    title: "Beyond Traditional Intelligence",
+    title: "Smart Technology That Works for You",
     description:
-      "Tap into advanced cognitive models and neural architectures that go far beyond automation—delivering real-time optimization, contextual reasoning, and continuous learning.",
+      "We use advanced AI models that go beyond simple automation. Our systems provide real-time insights, understand context, and keep learning to improve your operations continuously.",
   },
   {
     id: 3,
     icon: rocket,
-    title: "Seamless Automation with Human Precision",
+    title: "Automation That Feels Natural",
     description:
-      "Deploy intelligent agents that mimic human-like decision-making, reduce friction in operations, and power your business with unmatched speed and accuracy.",
+      "Our intelligent systems make decisions like humans would, but faster and more accurately. They streamline your operations, reduce errors, and help your team focus on what matters most.",
   },
   {
     id: 4,
     icon: start,
-    title: "Redefining the Possibilities of AI",
+    title: "Innovation That Makes a Difference",
     description:
-      "Enter a new era of innovation where machine learning meets ethical design, and breakthrough ideas become practical tools for everyday impact.",
+      "We combine cutting-edge machine learning with thoughtful design to create practical solutions that solve real problems and deliver tangible results for your business.",
   },
 ];
 
 export const faqs = [
   {
     question: "What services does NeuroraLynx AI offer?",
-    answer: `• App Development – High-performance iOS and Android applications with exceptional user experiences.
-• UX/UI Design – Intuitive and visually compelling interfaces that drive engagement.
-• Web Development – Fast, secure, and scalable websites tailored to business goals.
-• Artificial Intelligence – Custom AI solutions that automate workflows and enhance decision-making.`,
+    answer: `• App Development: We build high-performance mobile applications for iOS and Android that provide excellent user experiences.
+• UX/UI Design: We create intuitive and visually appealing interfaces that engage users and drive results.
+• Web Development: We build fast, secure, and scalable websites that are tailored to meet your business goals.
+• Artificial Intelligence: We develop custom AI solutions that automate your workflows and help you make better decisions.`,
   },
   {
     question: "How does NeuroraLynx AI approach app development?",
-    answer: `• We follow a comprehensive development process from ideation to deployment.
-• Our team specializes in native iOS and Android development as well as cross-platform solutions.
-• We prioritize performance optimization, security, and exceptional user experiences.
-• Post-launch support ensures your app remains updated and competitive in the market.`,
+    answer: `• We follow a complete development process from initial idea to final deployment.
+• Our team works with native iOS and Android development as well as cross-platform solutions.
+• We focus on performance, security, and creating exceptional user experiences.
+• After launch, we provide ongoing support to keep your app updated and competitive.`,
   },
   {
     question: "What makes NeuroraLynx AI's web development services stand out?",
-    answer: `• We build responsive websites that work flawlessly across all devices and browsers.
-• Our development process emphasizes security, scalability, and performance optimization.
-• We integrate modern technologies like progressive web apps and headless CMS solutions.
-• Our websites are built with SEO best practices to improve visibility and organic traffic.`,
+    answer: `• We build responsive websites that work perfectly on all devices and browsers.
+• Our development process focuses on security, scalability, and performance.
+• We use modern technologies like progressive web apps and headless CMS solutions.
+• Our websites follow SEO best practices to help you get found online.`,
   },
   {
     question: "How does NeuroraLynx AI incorporate AI into business solutions?",
-    answer: `• We develop custom AI models tailored to specific business challenges and opportunities.
-• Our AI solutions can automate repetitive tasks, analyze complex data, and generate actionable insights.
-• We integrate machine learning capabilities to help systems learn and improve over time.
-• Our AI implementations prioritize transparency, ethics, and human-centered design.`,
+    answer: `• We create custom AI models designed for your specific business needs.
+• Our AI solutions automate repetitive tasks, analyze data, and provide useful insights.
+• We use machine learning to help systems learn and improve continuously.
+• Our AI work focuses on being transparent, ethical, and user-friendly.`,
   },
   {
     question:
       "What is the typical project timeline for app or web development?",
-    answer: `• Simple websites: 4-6 weeks from concept to launch.
-• Complex web applications: 8-16 weeks depending on feature complexity.
-• Mobile applications: 8-12 weeks for the initial version.
-• Enterprise solutions: 3-6 months for comprehensive implementation.
-• Timelines can be adjusted based on project scope and client requirements.`,
+    answer: `• Simple websites: Usually 4 to 6 weeks from start to finish.
+• Complex web applications: Typically 8 to 16 weeks depending on features needed.
+• Mobile applications: Generally 8 to 12 weeks for the first version.
+• Enterprise solutions: Usually 3 to 6 months for complete implementation.
+• Timelines can be adjusted based on your project needs and requirements.`,
   },
   {
     question: "How does NeuroraLynx AI ensure quality in its deliverables?",
-    answer: `• Rigorous testing protocols including automated and manual testing.
-• Adherence to industry best practices and coding standards.
-• Regular code reviews and quality assurance checkpoints.
-• Comprehensive documentation for all projects.
-• Continuous integration and deployment practices for reliable updates.`,
+    answer: `• We use thorough testing including both automated and manual testing.
+• We follow industry best practices and maintain high coding standards.
+• We conduct regular code reviews and quality checks throughout development.
+• We provide complete documentation for all projects.
+• We use continuous integration and deployment for reliable updates.`,
   },
   {
     question:
@@ -236,43 +227,43 @@ export const faqs = [
   },
   {
     question: "How does the UX/UI design process work at NeuroraLynx AI?",
-    answer: `• Discovery: Understanding user needs, business goals, and market context.
-• Research: Competitive analysis and user research to inform design decisions.
-• Wireframing: Creating low-fidelity mockups to establish information architecture.
-• Prototyping: Developing interactive prototypes for user testing.
-• Visual Design: Creating the final look and feel with attention to brand consistency.
-• Implementation: Working closely with developers to ensure design integrity.`,
+    answer: `• Discovery: We start by understanding your users, business goals, and market.
+• Research: We analyze competitors and study users to guide our design decisions.
+• Wireframing: We create simple layouts to plan the structure and flow.
+• Prototyping: We build interactive prototypes to test with users.
+• Visual Design: We create the final look and feel that matches your brand.
+• Implementation: We work closely with developers to make sure the design is built correctly.`,
   },
   {
     question:
       "What ongoing support does NeuroraLynx AI provide after project completion?",
-    answer: `• Regular maintenance updates to ensure security and compatibility.
-• Performance monitoring and optimization recommendations.
-• Feature enhancements based on user feedback and analytics.
-• Technical support packages tailored to client needs.
-• Training for client teams to manage content and basic functions.`,
+    answer: `• Regular maintenance updates to keep everything secure and working properly.
+• Performance monitoring and suggestions for improvements.
+• New features based on user feedback and usage data.
+• Technical support packages customized to your needs.
+• Training for your team so you can manage content and basic functions.`,
   },
   {
     question: "How does NeuroraLynx AI handle project pricing?",
-    answer: `• We offer flexible pricing models including fixed-price projects and time-and-materials arrangements.
-• Each project receives a detailed proposal with transparent cost breakdowns.
-• We work with clients to prioritize features that deliver the most value within budget constraints.
-• Payment schedules are typically milestone-based to align with project progress.`,
+    answer: `• We offer flexible pricing including fixed-price projects and hourly arrangements.
+• Every project gets a detailed proposal with clear cost breakdowns.
+• We work with you to prioritize features that give the most value within your budget.
+• Payment schedules are usually based on project milestones.`,
   },
   {
     question:
       "Can NeuroraLynx AI help with existing projects or only new ones?",
-    answer: `• We offer code audits and technical assessments for existing applications.
-• Our team can take over maintenance and enhancement of legacy systems.
-• We specialize in modernizing outdated applications with current technologies.
-• We can integrate new features or modules into existing platforms.`,
+    answer: `• We can review and assess your existing applications.
+• Our team can take over maintenance and improvements for current systems.
+• We specialize in updating older applications with modern technologies.
+• We can add new features or modules to your existing platforms.`,
   },
   {
     question: "How can I get started with NeuroraLynx AI for my project?",
-    answer: `• Contact us through our website to schedule an initial consultation.
-• Share your project requirements and goals during the discovery call.
-• Receive a tailored proposal outlining approach, timeline, and investment.
-• Begin your project with a dedicated team committed to your success.`,
+    answer: `• Contact us through our website to set up an initial consultation.
+• Share your project needs and goals during our discovery call.
+• We'll send you a customized proposal with our approach, timeline, and pricing.
+• Start your project with a team dedicated to your success.`,
   },
 ];
 
@@ -282,28 +273,28 @@ export const coreValues = [
     icon: integrity,
     title: "Integrity",
     description:
-      "Transparency and honesty guide our interstellar relationships.",
+      "We believe in being transparent and honest in everything we do, building trust through clear communication and reliable partnerships.",
   },
   {
-    id: 1,
+    id: 2,
     icon: quality,
     title: "Quality",
     description:
-      "We pursue excellence in every line of code, every design pixel, every cosmic dimension.",
+      "We pay attention to every detail, from the code we write to the designs we create, ensuring excellence in every project we deliver.",
   },
   {
-    id: 1,
+    id: 3,
     icon: success,
     title: "Customer Success",
     description:
-      " Your triumph is ours—measured by tangible impact and universal reach.",
+      "Your success is our priority. We measure our achievements by the real impact we make and the value we bring to your business.",
   },
   {
-    id: 1,
+    id: 4,
     icon: Infinite,
-    title: "Infinite Learning",
+    title: "Continuous Learning",
     description:
-      "We explore beyond known boundaries, continuously expanding our quantum knowledge.",
+      "We stay curious and keep learning, always exploring new technologies and approaches to bring you the best solutions possible.",
   },
 ];
 
@@ -311,17 +302,17 @@ export const visionAndMission = [
   {
     title: "Our Vision",
     description:
-      "To become a global leader in delivering intelligent digital solutions that seamlessly blend innovation, user experience, and business value. We envision a world where technology doesn't just support ideas—it accelerates them. Our goal is to shape the future of digital transformation by empowering organizations with smart, scalable, and human-centric solutions that drive impact across industries and communities.",
+      "We aim to be a trusted partner for businesses looking to transform their digital presence. Our vision is to create technology solutions that combine innovation with practical value, helping companies achieve their goals faster and more effectively. We believe technology should make life easier, not more complicated, and we're committed to building solutions that truly serve people and businesses.",
   },
   {
     title: "Our Mission",
     description:
-      "Our mission is to empower startups, enterprises, and forward-thinking brands with cutting-edge web and app development services driven by innovation and integrity. We are committed to crafting digital experiences that are not only functional and visually stunning but also strategically aligned with your business goals. Through continuous learning, collaboration, and the use of next-gen technologies, we strive to simplify complexity and deliver excellence at every touchpoint.",
+      "We help businesses of all sizes build powerful digital solutions that work. Whether you're a startup or an established company, we provide web and app development services that are both cutting-edge and reliable. We focus on creating digital experiences that look great, work smoothly, and help you reach your business objectives. Through teamwork, innovation, and a commitment to quality, we turn complex challenges into simple, effective solutions.",
   },
   {
     title: "Our Journey",
     description:
-      "Founded with a passion for redefining digital possibilities, our journey began with a small team and a big vision. Over the years, we've grown into a trusted technology partner for clients across industries—delivering hundreds of projects with precision and care. From early-stage startups to established enterprises, our collaborative approach, design-first thinking, and commitment to quality have earned us long-term partnerships and global recognition. As we continue to evolve, we remain dedicated to pushing boundaries, building meaningful solutions, and leaving a positive mark on the digital landscape.",
+      "We started with a simple idea: technology should solve real problems. What began as a small team with big ambitions has grown into a company trusted by clients across different industries. We've completed hundreds of projects, each one teaching us something new. From helping startups launch their first app to supporting large enterprises with complex systems, we've learned that success comes from listening, adapting, and always putting quality first. As we continue growing, we stay focused on what matters most: delivering solutions that make a real difference.",
   },
 ];
 
@@ -332,28 +323,28 @@ export const webDevelopmentServices = [
     title: "E-commerce Websites",
     img: CgWebsite,
     description:
-      "We build dynamic, AI-enhanced e-commerce platforms that offer seamless shopping experiences, real-time inventory tracking, personalized product recommendations, and secure payment gateways—designed to boost sales and customer retention.",
+      "We build powerful e-commerce platforms that offer smooth shopping experiences, real-time inventory tracking, personalized product suggestions, and secure payment systems designed to increase sales and keep customers coming back.",
   },
   {
     id: 2,
     title: "Social Media Platforms",
     img: GoFileMedia,
     description:
-      "Create engaging, scalable social networking sites tailored for interaction and growth. Our solutions integrate AI to recommend content, monitor engagement, and drive meaningful connections between users and brands.",
+      "Create engaging, scalable social networking sites built for interaction and growth. Our solutions use AI to recommend content, track engagement, and help users and brands connect in meaningful ways.",
   },
   {
     id: 3,
     title: "Landing Page Development",
     img: TfiLayoutMediaRightAlt,
     description:
-      "Design high-impact landing pages focused on conversions. With AI-based heatmaps and behavior analytics, we help you deliver content that captures attention and drives your target audience to act.",
+      "Design high-converting landing pages that get results. With AI-powered analytics and behavior tracking, we help you create content that grabs attention and encourages your audience to take action.",
   },
   {
     id: 4,
     title: "Custom Business Websites",
     img: MdOutlineDashboardCustomize,
     description:
-      "Develop fully customized websites tailored to your unique business goals. From advanced dashboards to interactive UI elements, our AI-enhanced solutions blend performance, design, and functionality into a powerful digital asset.",
+      "Build fully customized websites designed for your specific business goals. From advanced dashboards to interactive features, our solutions combine performance, design, and functionality into a powerful digital presence.",
   },
 ];
 
@@ -364,28 +355,28 @@ export const appDevelopmentServices = [
     title: "iOS App Development",
     img: FaAppStoreIos,
     description:
-      "We build robust iOS apps with native Swift and Objective-C technologies. With AI-integrated features like smart search, predictive UX, and adaptive personalization, we deliver premium apps optimized for performance and elegance.",
+      "We build strong iOS apps using native Swift and Objective-C. With AI features like smart search, predictive interfaces, and personalized experiences, we deliver high-quality apps optimized for performance and user experience.",
   },
   {
     id: 2,
     title: "Android App Development",
     img: IoLogoAndroid,
     description:
-      "Develop scalable Android applications with modern tools like Kotlin and Jetpack. We embed AI features for voice recognition, recommendation engines, and intelligent automation to enhance user experience and engagement.",
+      "Build scalable Android applications using modern tools like Kotlin and Jetpack. We add AI features for voice recognition, recommendation systems, and smart automation to improve user experience and engagement.",
   },
   {
     id: 3,
     title: "Flutter App Development",
     img: SiFlutter,
     description:
-      "Utilize Flutter for fast, flexible, and beautiful cross-platform apps. Our solutions incorporate AI-driven modules for real-time insights, personalization, and smart user interactions—all from a single codebase.",
+      "Use Flutter to create fast, flexible, and attractive cross-platform apps. Our solutions include AI features for real-time insights, personalization, and smart user interactions, all from one codebase.",
   },
   {
     id: 4,
     title: "Hybrid App Development",
     img: TbDeviceMobileCode,
     description:
-      "Create powerful hybrid apps using frameworks like Ionic and React Native. We fuse web technologies with native capabilities and intelligent features to deliver seamless performance across devices and platforms.",
+      "Create powerful hybrid apps using frameworks like Ionic and React Native. We combine web technologies with native features and smart capabilities to deliver smooth performance across all devices and platforms.",
   },
 ];
 
@@ -393,58 +384,58 @@ export const futureTechSectors = [
   {
     id: 1,
     img: governance,
-    title: "Cognitive Governance",
+    title: "Government & Public Services",
     description:
-      "Neural decision support systems for policy optimization, adaptive regulatory frameworks powered by predictive analytics, and distributed intelligence networks for transparent public administration.",
+      "Smart systems that help government agencies make better decisions, streamline processes, and serve citizens more effectively through data-driven insights and automation.",
   },
   {
     id: 2,
     img: fintech,
-    title: "Neural Finance",
+    title: "Financial Technology",
     description:
-      "Cognitive market intelligence platforms, sentiment-adaptive trading systems, and neuromorphic risk assessment frameworks that evolve with market conditions and behavioral economics.",
+      "Intelligent platforms that analyze market trends, assess risks in real time, and help financial institutions make smarter decisions while adapting to changing market conditions.",
   },
   {
     id: 3,
     img: healthcare,
-    title: "Precision Medicine & Cognitive Health",
+    title: "Healthcare & Medical Technology",
     description:
-      "Integrated biodigital health systems, cognitive diagnostic platforms that synthesize multi-modal health data, and personalized treatment optimization through continuous biometric intelligence.",
+      "Integrated health systems that combine patient data, diagnostic tools, and personalized treatment plans to improve patient outcomes and streamline medical workflows.",
   },
   {
     id: 4,
     img: advancedrobotics,
-    title: "Collaborative Intelligence Systems",
+    title: "Manufacturing & Automation",
     description:
-      "Human-AI collaborative frameworks, adaptive manufacturing intelligence that optimizes production in real-time, and cognitive automation platforms that enhance human capabilities rather than replace them.",
+      "Smart manufacturing systems that work alongside human teams, optimizing production processes in real time and enhancing productivity while keeping people at the center of operations.",
   },
   {
     id: 5,
     img: energy,
-    title: "Intelligent Sustainability",
+    title: "Energy & Sustainability",
     description:
-      "Cognitive resource optimization networks, predictive energy distribution systems that adapt to usage patterns, and integrated circular economy platforms that minimize waste through intelligent resource tracking.",
+      "Intelligent systems that optimize energy usage, predict demand patterns, and help organizations reduce waste while building more sustainable operations for the future.",
   },
   {
     id: 6,
     img: edtech,
-    title: "Cognitive Learning Ecosystems",
+    title: "Education Technology",
     description:
-      "Adaptive knowledge systems that personalize educational pathways, neural feedback loops for accelerated skill acquisition, and collaborative intelligence platforms that enhance collective learning and innovation.",
+      "Adaptive learning platforms that personalize education for each student, provide real-time feedback, and create collaborative environments that enhance learning outcomes.",
   },
   {
     id: 7,
     img: space,
-    title: "Advanced Exploration Systems",
+    title: "Aerospace & Exploration",
     description:
-      "Autonomous mission intelligence for space exploration, cognitive resource utilization systems for sustainable operations, and distributed intelligence networks for remote scientific discovery and analysis.",
+      "Autonomous systems for space missions, intelligent resource management for long-term operations, and distributed networks that enable remote scientific research and discovery.",
   },
   {
     id: 8,
     img: security,
-    title: "Intelligent Security Architecture",
+    title: "Cybersecurity & Data Protection",
     description:
-      "Adaptive threat intelligence networks, cognitive security systems that evolve with emerging threats, and integrated privacy frameworks that balance protection with accessibility through contextual intelligence.",
+      "Advanced security systems that learn from threats, adapt to new risks, and protect sensitive information while maintaining accessibility for authorized users.",
   },
 ];
 
@@ -526,7 +517,6 @@ export const appDevelopmentPortfolio = [
 // Import AI project images
 import findMyAITool from "../assets/images/portfolio/ai/Find My AI Tool.png";
 import vyroAI from "../assets/images/portfolio/ai/AI Art Generator – Vyro AI.webp";
-import musicly from "../assets/images/portfolio/ai/Musicly – AI Music Generator.webp";
 
 // AI Projects portfolio
 export const aiProjectsPortfolio = [

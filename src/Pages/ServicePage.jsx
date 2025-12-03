@@ -31,17 +31,17 @@ const ServicePage = () => {
               data-aos="fade-up"
               className="text-[56px] text-center leading-tight font-bold dark:text-white text-white"
             >
-              Empowering Your Vision <br />
-              Through AI-Centric Innovation
+              Turning Your Vision Into Reality <br />
+              With Smart Technology Solutions
             </h1>
             <p
               className="desc text-center max-w-[50rem] !text-white"
               data-aos="fade-up"
             >
-              At NeuroraLynx AI, we fuse deep tech with real-world solutions to
-              solve complex challenges and drive growth. Our services span
-              intelligent automation, custom development, and transformative
-              strategies—crafted to future-proof your business and unlock its
+              At NeuroraLynx AI, we combine advanced technology with practical solutions to
+              solve real challenges and help your business grow. Our services include
+              intelligent automation, custom development, and strategic
+              solutions designed to prepare your business for the future and help it reach its
               full potential.
             </p>
           </div>

@@ -27,23 +27,23 @@ const LandingBanner = ({ page }) => {
   const content = {
     "web-development": {
       label: "Best Web Development Services",
-      heading: "Build Scalable, High-Performance Websites That Convert",
+      heading: "Build Websites That Work and Convert",
       description:
-        "We craft responsive, SEO-optimized websites with engaging interfaces that turn visitors into loyal customers. From landing pages to complex platforms, we bring your vision online.",
+        "We create responsive, SEO-friendly websites with engaging interfaces that turn visitors into customers. From simple landing pages to complex platforms, we bring your vision to life online.",
     },
     "app-development": {
       label: "Best App Development Services",
-      heading: "Transform Ideas into Powerful Mobile Experiences",
+      heading: "Turn Your Ideas Into Powerful Mobile Apps",
       description:
-        "We design and develop cross-platform and native apps that are fast, secure, and tailored to user needs—delivering intuitive functionality with seamless performance.",
+        "We design and build cross-platform and native apps that are fast, secure, and designed for your users, delivering intuitive functionality with smooth performance.",
     },
   };
 
   const { label, heading, description } = content[page] || {
     label: "AI Solutions",
-    heading: "Empowering Your Digital Presence with Cutting-Edge Solutions",
+    heading: "Building Digital Solutions That Help Your Business Grow",
     description:
-      "At NeuroraLynx AI, we specialize in creating innovative and user-centric digital solutions that not only look great but also drive results.",
+      "At NeuroraLynx AI, we create innovative and user-focused digital solutions that look great and deliver real results for your business.",
   };
 
   return (

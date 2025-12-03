@@ -1,37 +1,82 @@
 import React from "react";
+import { useQuery } from "@tanstack/react-query";
 import ViewBlogHeader from "../Components/blog/ViewBlogHeader";
 import { useTheme } from "../Context/ThemeContext";
 import ViewBlogContent from "../Components/blog/viewBlogContent";
 import { useParams } from "react-router-dom";
-import { blogPosts } from "../util/blog";
 import BlogBody from "../Components/blog/blogBody";
 import Faq from "../Components/Faq";
 import RoundedHeader from "../Components/RoundedHeader";
+import { getBlogBySlug, getPublishedBlogs } from "../services/blogApi";
+import { LoadingSpinner } from "../Components/Loader";
 
 function BlogView() {
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
-  const { id } = useParams();
-  const blogId = Number(id);
-  const blog = blogPosts.find((post) => post.id === blogId);
+  const { slug } = useParams();
 
-  if (!blog) {
+  const { data: blogData, isLoading, error } = useQuery({
+    queryKey: ["blog", slug],
+    queryFn: () => getBlogBySlug(slug),
+  });
+
+  const { data: allBlogsData } = useQuery({
+    queryKey: ["publishedBlogs"],
+    queryFn: getPublishedBlogs,
+  });
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+  };
+
+  const calculateReadTime = (content) => {
+    if (!content) return "2 min read";
+    const wordsPerMinute = 200;
+    const text = content.replace(/<[^>]*>/g, ""); // Remove HTML tags
+    const wordCount = text.split(/\s+/).length;
+    const minutes = Math.ceil(wordCount / wordsPerMinute);
+    return `${minutes} min read`;
+  };
+
+  if (isLoading) {
+    return (
+      <div className="relative bg-white dark:bg-darkblack overflow-x-hidden max-w-screen min-h-screen flex items-center justify-center">
+        <LoadingSpinner />
+      </div>
+    );
+  }
+
+  if (error || !blogData?.blog) {
     return (
       <div className="relative bg-white dark:bg-darkblack overflow-x-hidden max-w-screen">
         <div className="relative max-w-3xl mx-auto px-4 pt-[7rem]">
-          <h1 className="text-2xl font-bold dark:text-white">Blog not found</h1>
+          <h1 className="text-2xl font-bold dark:text-white">
+            Blog not found
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400 mt-2">
+            {error?.message || "The blog post you're looking for doesn't exist."}
+          </p>
         </div>
       </div>
     );
   }
 
-  function getRandomPosts(posts, count, excludeId) {
-    const filteredPosts = posts.filter((post) => post.id !== excludeId);
+  const blog = blogData.blog;
+  const allBlogs = allBlogsData?.blogs || [];
+
+  // Get random related posts (excluding current blog)
+  function getRandomPosts(posts, count, excludeSlug) {
+    const filteredPosts = posts.filter((post) => post.slug !== excludeSlug);
     const shuffled = filteredPosts.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
   }
 
-  const randomPosts = getRandomPosts(blogPosts, 3, blogId);
+  const randomPosts = getRandomPosts(allBlogs, 3, blog.slug);
 
   return (
     <div className="relative bg-white dark:bg-darkblack overflow-x-hidden max-w-screen">
@@ -44,8 +89,8 @@ function BlogView() {
         <ViewBlogHeader
           image={blog.imageUrl}
           title={blog.title}
-          readTime={blog.readTime}
-          date={blog.date}
+          readTime={calculateReadTime(blog.content)}
+          date={formatDate(blog.publishDate || blog.createdAt)}
         />
         <ViewBlogContent content={blog.content} />
       </div>
@@ -57,8 +102,17 @@ function BlogView() {
               Related Posts
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-5 dark:bg-darkblack">
-              {randomPosts.map((post, index) => (
-                <BlogBody key={index} {...post} passkey={true} />
+              {randomPosts.map((post) => (
+                <BlogBody
+                  key={post._id}
+                  id={post.slug}
+                  imageUrl={post.imageUrl}
+                  title={post.title}
+                  subdescription={post.excerpt}
+                  readTime={calculateReadTime(post.content)}
+                  date={formatDate(post.publishDate || post.createdAt)}
+                  passkey={true}
+                />
               ))}
             </div>
           </div>
