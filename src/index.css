@@ -3,66 +3,8 @@
 @tailwind utilities;
 
 /* Blog content styling */
-.blog-content {
-  @apply text-black dark:text-gray-300;
-}
-
-.blog-content h1,
-.blog-content h2,
-.blog-content h3,
-.blog-content h4,
-.blog-content h5,
-.blog-content h6 {
-  @apply font-bold dark:text-white mb-4 mt-6;
-}
-
-.blog-content h1 {
-  @apply text-3xl;
-}
-
-.blog-content h2 {
-  @apply text-2xl;
-}
-
-.blog-content h3 {
-  @apply text-xl;
-}
-
-.blog-content p {
-  @apply mb-4 leading-relaxed;
-}
-
-.blog-content ul,
-.blog-content ol {
-  @apply mb-4 ml-6;
-}
-
-.blog-content li {
-  @apply mb-2;
-}
-
-.blog-content a {
-  @apply text-primary hover:underline;
-}
-
-.blog-content img {
-  @apply rounded-lg my-4 max-w-full;
-}
-
-.blog-content blockquote {
-  @apply border-l-4 border-primary pl-4 italic my-4;
-}
-
-.blog-content code {
-  @apply bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm;
-}
-
-.blog-content pre {
-  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg overflow-x-auto my-4;
-}
-
-.blog-content pre code {
-  @apply bg-transparent p-0;
+.blog-content * {
+  all: revert;
 }
 
 ::-webkit-scrollbar {
