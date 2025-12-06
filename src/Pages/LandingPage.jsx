@@ -46,7 +46,7 @@ const LandingPage = ({ page }) => {
       <LandingHeader />
       <div className="bg-white dark:bg-darkblack">
         <LandingBanner page={page} />
-        <LeadForm/>
+        <LeadForm hideInfo={true}/>
         <section id="about-us">
           <div className="wrapper grid md:grid-cols-2 gap-10 paddingtop paddingbottom">
             <img
