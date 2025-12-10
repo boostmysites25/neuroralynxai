@@ -9,12 +9,9 @@ function ViewBlogContent({ content }) {
   if (typeof content === "string") {
     return (
       <div
-        className="blog-content prose prose-lg dark:prose-invert max-w-none"
+        className="blog-content prose prose-lg dark:prose-invert max-w-none text-gray-900 dark:text-white"
         data-aos="fade-up"
         dangerouslySetInnerHTML={{ __html: content }}
-        style={{
-          color: "inherit",
-        }}
       />
     );
   }

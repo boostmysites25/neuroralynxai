@@ -7,6 +7,24 @@
   all: revert;
 }
 
+/* Ensure blog content text is visible in dark mode */
+.dark .blog-content,
+.dark .blog-content p,
+.dark .blog-content li,
+.dark .blog-content span,
+.dark .blog-content div,
+.dark .blog-content h1,
+.dark .blog-content h2,
+.dark .blog-content h3,
+.dark .blog-content h4,
+.dark .blog-content h5,
+.dark .blog-content h6,
+.dark .blog-content a,
+.dark .blog-content strong,
+.dark .blog-content em {
+  color: white !important;
+}
+
 ::-webkit-scrollbar {
   scroll-behavior: smooth;
   width: 6px;
