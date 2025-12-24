@@ -10,6 +10,7 @@ import Faq from "../Components/Faq";
 import BlogBody from "../Components/blog/blogBody";
 import { getPublishedBlogs } from "../services/blogApi";
 import SEOHelmet from "../Components/SEOHelmet";
+import WhyChooseUs from "../Components/WhyChooseUs";
 
 const AboutUsPage = () => {
   const { theme } = useTheme();
@@ -105,6 +106,7 @@ const AboutUsPage = () => {
             </div>
           </div>
         </section>
+        <WhyChooseUs/>
       </section>
       <div className="relative overflow-hidden">
         <div

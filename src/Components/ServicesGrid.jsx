@@ -39,13 +39,13 @@ const ServicesGrid = () => {
                 <div className="absolute -right-20 -top-20 w-40 h-40 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 z-0"></div>
 
                 {/* Subtle particle effect - adjusted for light mode */}
-                <div
+                {/* <div
                   className={`absolute inset-0 opacity-0 ${
                     isDarkMode
                       ? "group-hover:opacity-30"
                       : "group-hover:opacity-15"
                   } transition-opacity duration-700 z-0 card-particles`}
-                ></div>
+                ></div> */}
 
                 {/* Content container */}
                 <div className="flex flex-col justify-evenly min-h-full p-6 text-darkblack dark:text-white relative z-10 transition-all duration-500 group-hover:translate-y-0">

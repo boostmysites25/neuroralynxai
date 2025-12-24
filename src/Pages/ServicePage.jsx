@@ -46,10 +46,10 @@ const ServicePage = () => {
             </p>
           </div>
 
+        </section>
           <div className="wrapper">
             <ServicesGrid />
           </div>
-        </section>
       </section>
 
       <div className="relative overflow-hidden dark:bg-darkblack min-h-screen">

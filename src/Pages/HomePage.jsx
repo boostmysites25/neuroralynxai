@@ -13,6 +13,7 @@ import Ourvalues from "../Components/Ourvalues";
 import Portfolio from "../Components/Portfolio";
 import LeadForm from "../Components/landingpage/LeadForm";
 import SEOHelmet from "../Components/SEOHelmet";
+import BlogSlider from "../Components/blog/BlogSlider";
 
 const HomePage = () => {
   const { theme } = useTheme();
@@ -59,11 +60,11 @@ const HomePage = () => {
       <Portfolio />
       <div className="relative overflow-hidden dark:bg-darkblack min-h-screen">
         <div
-          className={`absolute ${
-            isDarkMode ? `flex` : `hidden`
-          } -bottom-[50rem] -left-[50rem] w-full h-full bg-background blur-3xl opacity-70 z-0`}
+          className={`absolute ${isDarkMode ? `flex` : `hidden`
+            } -bottom-[50rem] -left-[50rem] w-full h-full bg-background blur-3xl opacity-70 z-0`}
         />
         <div className="relative z-10 w-full h-full">
+          <BlogSlider />
           <Testimonials />
           <Highlights />
           <Faq />

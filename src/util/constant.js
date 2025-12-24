@@ -384,58 +384,66 @@ export const futureTechSectors = [
   {
     id: 1,
     img: governance,
-    title: "Government & Public Services",
+    title: "AI Solutions for Government & Public Sector",
     description:
-      "Smart systems that help government agencies make better decisions, streamline processes, and serve citizens more effectively through data-driven insights and automation.",
+      "Secure, compliant AI systems for public services, including data analytics, process automation, decision support, and citizen engagement platforms.",
+    keywords: "AI for government, public sector AI solutions, secure AI systems",
   },
   {
     id: 2,
     img: fintech,
-    title: "Financial Technology",
+    title: "AI Solutions for Financial Technology (FinTech)",
     description:
-      "Intelligent platforms that analyze market trends, assess risks in real time, and help financial institutions make smarter decisions while adapting to changing market conditions.",
+      "AI-driven automation for fraud detection, risk analysis, financial data processing, and intelligent decision-making in modern fintech platforms.",
+    keywords: "AI in fintech, financial automation, fraud detection AI",
   },
   {
     id: 3,
     img: healthcare,
-    title: "Healthcare & Medical Technology",
+    title: "AI Solutions for Healthcare & Medical Technology",
     description:
-      "Integrated health systems that combine patient data, diagnostic tools, and personalized treatment plans to improve patient outcomes and streamline medical workflows.",
+      "Intelligent AI solutions for healthcare analytics, diagnostics support, patient data management, and workflow automation with privacy-first design.",
+    keywords: "AI in healthcare, medical AI solutions, healthcare automation",
   },
   {
     id: 4,
     img: advancedrobotics,
-    title: "Manufacturing & Automation",
+    title: "AI Solutions for Manufacturing & Industrial Automation",
     description:
-      "Smart manufacturing systems that work alongside human teams, optimizing production processes in real time and enhancing productivity while keeping people at the center of operations.",
+      "Smart automation, predictive analytics, and AI-powered monitoring systems to improve efficiency, quality control, and operational scalability.",
+    keywords: "AI in manufacturing, industrial automation, predictive analytics",
   },
   {
     id: 5,
     img: energy,
-    title: "Energy & Sustainability",
+    title: "AI Solutions for Energy & Sustainability",
     description:
-      "Intelligent systems that optimize energy usage, predict demand patterns, and help organizations reduce waste while building more sustainable operations for the future.",
+      "AI-powered optimization for energy management, sustainability analytics, predictive maintenance, and smart infrastructure systems.",
+    keywords: "AI for energy, sustainability AI, smart energy systems",
   },
   {
     id: 6,
     img: edtech,
-    title: "Education Technology",
+    title: "AI Solutions for Education Technology (EdTech)",
     description:
-      "Adaptive learning platforms that personalize education for each student, provide real-time feedback, and create collaborative environments that enhance learning outcomes.",
+      "Intelligent learning platforms, personalized education systems, analytics-driven insights, and automation for modern digital education.",
+    keywords: "AI in education, EdTech AI solutions, personalized learning AI",
   },
   {
     id: 7,
     img: space,
-    title: "Aerospace & Exploration",
+    title: "AI Solutions for Aerospace & Advanced Research",
     description:
-      "Autonomous systems for space missions, intelligent resource management for long-term operations, and distributed networks that enable remote scientific research and discovery.",
+      "AI-driven analytics, simulation systems, data modeling, and automation solutions for aerospace, research, and exploration technologies.",
+    keywords: "AI in aerospace, advanced AI analytics, research automation",
   },
   {
     id: 8,
     img: security,
-    title: "Cybersecurity & Data Protection",
+    title: "AI Solutions for Cybersecurity & Data Protection",
     description:
-      "Advanced security systems that learn from threats, adapt to new risks, and protect sensitive information while maintaining accessibility for authorized users.",
+      "AI-powered threat detection, security automation, data monitoring, and risk intelligence for secure digital infrastructure.",
+    keywords: "AI cybersecurity, data protection AI, threat detection systems",
   },
 ];
 

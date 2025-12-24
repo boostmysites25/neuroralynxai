@@ -50,8 +50,8 @@ const HomePageBanner = () => {
         }}
       />
       <div className="flex items-center w-full h-full pt-[7rem] pb-[4rem] min-h-screen">
-        <div className="wrapper flex flex-col-reverse lg:grid grid-cols-[60%_1fr] items-center gap-5">
-          <div className="flex flex-col gap-4 items-start justify-center relative z-[1]">
+        <div className="wrapper flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col gap-4 items-start max-w-5xl mx-auto justify-center relative z-[1]">
             <p
               data-aos="fade-right"
               className="text-xl text-gray-900 font-semibold"
@@ -62,11 +62,11 @@ const HomePageBanner = () => {
               data-aos="fade-right"
               className="main-title dark:!text-gray-900 font-bold !leading-tight"
             >
-              Building Digital Solutions That Help Your Business Grow
+              Building AI-Powered Digital Solutions That Help Your Business Grow
             </h1>
             <p data-aos="fade-right" className="desc !text-black/80">
-              At NeuroraLynx AI, we create digital solutions that are both innovative and
-              practical. We build products that look great and deliver real results for your business.
+              AI, automation, and cloud solutions designed to help businesses
+              scale securely and efficiently.
             </p>
             <div data-aos="fade-right" className="flex gap-4 mt-10">
               <Link to="/about-us" className="primary-btn">
@@ -77,7 +77,7 @@ const HomePageBanner = () => {
               </Link>
             </div>
           </div>
-          <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
+          {/* <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
             <img
               loading="lazy"
               id="robot"
@@ -91,7 +91,7 @@ const HomePageBanner = () => {
               height="400"
               class="h-[14rem] lg:h-[18rem] w-auto object-contain"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

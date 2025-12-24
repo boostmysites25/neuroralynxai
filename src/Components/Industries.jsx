@@ -4,9 +4,16 @@ import { futureTechSectors } from "../util/constant";
 const Industries = () => {
   return (
     <div className="wrapper paddingtop paddingbottom">
-      <h2 className="main-title text-center mb-10" data-aos="fade-up">
-        AI Solutions Built for Your Industry
+      <h2 className="main-title max-w-5xl mx-auto mb-3 text-center" data-aos="fade-up">
+        Industry-Specific AI Solutions Designed for Real Business Impact
       </h2>
+      <p
+        className="desc text-center max-w-3xl mx-auto mb-10"
+        data-aos="fade-up"
+      >
+        We build practical AI, automation, and cloud systems customized for
+        industry-specific challenges.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {futureTechSectors.map((sector) => (
