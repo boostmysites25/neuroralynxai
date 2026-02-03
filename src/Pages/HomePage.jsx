@@ -10,6 +10,7 @@ import Faq from "../Components/Faq";
 import { useTheme } from "../Context/ThemeContext";
 import Industries from "../Components/Industries";
 import Ourvalues from "../Components/Ourvalues";
+import StrategicPartnerSlider from "../Components/StrategicPartnerSlider";
 import Portfolio from "../Components/Portfolio";
 import LeadForm from "../Components/landingpage/LeadForm";
 import SEOHelmet from "../Components/SEOHelmet";
@@ -35,17 +36,13 @@ const HomePage = () => {
               Building Digital Solutions That Make a Difference
             </h1>
             <p className="desc mt-4" data-aos="fade-left">
-              At <b>NeuroraLynx AI</b>, we build more than just software. We create
-              digital solutions that help your business grow and succeed. Our
-              team delivers smart, scalable solutions that help
-              businesses stay competitive in today's fast-paced world. From startups to
-              large companies, we customize every aspect of our work to
-              match your needs and goals.
+            <b>NeuroraLynx AI</b> : AI-first software development company building intelligent digital ecosystems for startups, scale-ups, and enterprises. We integrate Generative AI, LLMs, computer vision, NLP, and data science with full-stack engineering to deliver web, mobile, IoT, AR/VR, and blockchain solutions. From RAG and fine-tuning to microservices and predictive analytics, we transform data into decisions, code into capability, and ideas into measurable outcomes.
             </p>
           </div>
         </div>
       </section>
-      <WhyChooseUs />
+      <StrategicPartnerSlider />
+      {/* <WhyChooseUs /> */}
       <Ourvalues />
       <section className="dark:bg-darkblack ">
         <div className="flex wrapper flex-col gap-4 items-center w-full paddingtop">

@@ -62,11 +62,10 @@ const HomePageBanner = () => {
               data-aos="fade-right"
               className="main-title dark:!text-gray-900 font-bold !leading-tight"
             >
-              Building AI-Powered Digital Solutions That Help Your Business Grow
+              Enterprise AI, Generative AI & Full-Stack Software Development Company
             </h1>
             <p data-aos="fade-right" className="desc !text-black/80">
-              AI, automation, and cloud solutions designed to help businesses
-              scale securely and efficiently.
+            Architecting Intelligent Digital Ecosystems – From Generative AI, Custom LLMs, and Advanced Machine Learning to Scalable Web, Mobile, IoT, AR/VR, and Blockchain Solutions.
             </p>
             <div data-aos="fade-right" className="flex gap-4 mt-10">
               <Link to="/about-us" className="primary-btn">
