@@ -53,35 +53,35 @@ const Ourvalues = () => {
           ref={ref}
           //   data-aos-offset={-200}
           data-aos="fade-up"
-          className="w-full text-white grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl p-[2rem]"
+          className="w-full dark:text-white grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl p-[2rem]"
         >
           <div className="w-full flex flex-col items-center justify-center">
             <div className="flex flex-col gap-3 relative w-fit">
-              <h1 className="main-title !text-white">{yrs}</h1>
+              <h1 className="main-title !dark:text-white">{yrs}</h1>
               <span className="absolute top-1 -right-3 text-lg">+</span>
             </div>
-            <p className="desc mt-3 !text-white">Years of Experience</p>
+            <p className="desc mt-3 !dark:text-white">Years of Experience</p>
           </div>
           <div className="w-full flex flex-col items-center justify-center">
             <div className="flex flex-col gap-3 relative w-fit">
-              <h1 className="main-title !text-white">{experts}</h1>
+              <h1 className="main-title !dark:text-white">{experts}</h1>
               <span className="absolute top-1 -right-3 text-lg">+</span>
             </div>
-            <p className="desc mt-3 !text-white">Expert Team</p>
+            <p className="desc mt-3 !dark:text-white">Expert Team</p>
           </div>
           <div className="w-full flex flex-col items-center justify-center">
             <div className="flex flex-col gap-3 relative w-fit">
-              <h1 className="main-title !text-white">{clients}</h1>
+              <h1 className="main-title !dark:text-white">{clients}</h1>
               <span className="absolute top-1 -right-3 text-lg">+</span>
             </div>
-            <p className="desc mt-3 !text-white">Clients</p>
+            <p className="desc mt-3 !dark:text-white">Clients</p>
           </div>
           <div className="w-full flex flex-col items-center justify-center">
             <div className="flex flex-col gap-3 relative w-fit">
-              <h1 className="main-title !text-white">{onTimeCompletion}</h1>
+              <h1 className="main-title !dark:text-white">{onTimeCompletion}</h1>
               <span className="absolute top-1 -right-3 text-lg">%</span>
             </div>
-            <p className="desc mt-3 !text-white">On Time Completion</p>
+            <p className="desc mt-3 !dark:text-white">On Time Completion</p>
           </div>
         </div>
       </div>

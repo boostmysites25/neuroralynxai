@@ -13,7 +13,7 @@ const ServicesGrid = () => {
     <section>
       <div className="dark:bg-darkblack paddingtop paddingbottom">
         <div className="wrapper">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div
                 key={index}

@@ -120,6 +120,12 @@ export const seoConfig = {
       keywords: "AI web development, intelligent web applications, machine learning websites, neural network web apps, cognitive web solutions, AI full stack development",
       url: "https://neuroralynxai.com/services/web-development"
     },
+    'emerging-technologies': {
+      title: "Emerging Technologies - IoT, AR/VR & Blockchain | NeuroraLynx AI",
+      description: "Production-grade IoT, AR/VR, and Blockchain development. NeuroraLynx AI delivers IIoT solutions, immersive experiences, smart contracts, DeFi protocols, and digital twin implementations for enterprise.",
+      keywords: "IoT development, Industrial IoT, AR VR development, blockchain development, Web3, smart contracts, DeFi, digital twin, edge computing, emerging technology solutions",
+      url: "https://neuroralynxai.com/services/emerging-technologies"
+    },
     'artificial-intelligence': {
       title: "Artificial Intelligence Development Services | Custom AI Solutions | NeuroraLynx AI",
       description: "Comprehensive AI development services including machine learning, neural networks, predictive analytics, natural language processing, and custom AI solution development for businesses.",

@@ -5,14 +5,13 @@ const Industries = () => {
   return (
     <div className="wrapper paddingtop paddingbottom">
       <h2 className="main-title max-w-5xl mx-auto mb-3 text-center" data-aos="fade-up">
-        Industry-Specific AI Solutions Designed for Real Business Impact
+        Industries We Transform with AI & Software
       </h2>
       <p
         className="desc text-center max-w-3xl mx-auto mb-10"
         data-aos="fade-up"
       >
-        We build practical AI, automation, and cloud systems customized for
-        industry-specific challenges.
+        NeuroraLynx AI works across industries to design and implement solutions that address sector-specific challenges while maintaining cross-industry best practices in security, scalability, and compliance.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

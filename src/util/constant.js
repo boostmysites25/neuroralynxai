@@ -1,8 +1,7 @@
 import {
   Smartphone,
-  Users,
-  Code,
-  MemoryStick,
+  Palette,
+  Cpu,
 } from "lucide-react";
 import file from "../assets/images/png/file.png";
 import graph from "../assets/images/png/graph.png";
@@ -61,35 +60,27 @@ export const companyDetails = {
 
 export const services = [
   {
-    title: "App Development",
-    link: "app-development",
+    title: "Mobile App Development – Native & Cross-Platform",
+    link: "mobile-app-development",
     description:
-      "Designing and developing high-performance iOS and Android apps that deliver speed, security, and exceptional user experiences.",
+      "Our mobile app development teams build native iOS and Android applications for maximum performance and platform-specific features, as well as cross-platform apps using React Native and Flutter for faster time-to-market.",
     icon: Smartphone,
     bgColor: "bg-blue-500",
   },
   {
-    title: "UX/UI Design",
+    title: "UX/UI Design & Digital Product Design",
     link: "ux-ui-design",
     description:
-      "Creating intuitive, accessible, and visually compelling interfaces that drive engagement and user satisfaction.",
-    icon: Users,
+      "Design at NeuroraLynx AI is deeply research-driven and data-informed. Our UX/UI teams conduct user research, stakeholder interviews, journey mapping, wireframing, prototyping, and usability testing to create interfaces that simplify complexity.",
+    icon: Palette,
     bgColor: "bg-gray-900",
   },
   {
-    title: "Web Development",
-    link: "web-development",
+    title: "Emerging Technologies – IoT, AR/VR & Blockchain",
+    link: "emerging-technologies",
     description:
-      "Building fast, secure, and scalable websites and web apps tailored to meet business goals and user needs.",
-    icon: Code,
-    bgColor: "bg-gray-900",
-  },
-  {
-    title: "Artificial Intelligence",
-    link: "artificial-intelligence",
-    description:
-      "Leveraging AI to automate workflows, enhance decision-making, and unlock intelligent insights from data.",
-    icon: MemoryStick,
+      "We help forward-thinking organizations adopt and scale emerging technologies. For us, these are not experimental add-ons – they are production-grade capabilities integrated into real business processes.",
+    icon: Cpu,
     bgColor: "bg-gray-900",
   },
 ];
@@ -383,67 +374,67 @@ export const appDevelopmentServices = [
 export const futureTechSectors = [
   {
     id: 1,
-    img: governance,
-    title: "AI Solutions for Government & Public Sector",
+    img: healthcare,
+    title: "Healthcare & Life Sciences",
     description:
-      "Secure, compliant AI systems for public services, including data analytics, process automation, decision support, and citizen engagement platforms.",
-    keywords: "AI for government, public sector AI solutions, secure AI systems",
+      "HIPAA-aware healthcare applications, telemedicine platforms, AI-assisted diagnostics, remote patient monitoring, and medical imaging analytics.",
+    keywords: "healthcare AI, HIPAA applications, telemedicine, medical imaging analytics",
   },
   {
     id: 2,
     img: fintech,
-    title: "AI Solutions for Financial Technology (FinTech)",
+    title: "Banking, Financial Services & Insurance",
     description:
-      "AI-driven automation for fraud detection, risk analysis, financial data processing, and intelligent decision-making in modern fintech platforms.",
-    keywords: "AI in fintech, financial automation, fraud detection AI",
+      "Fraud detection systems, credit scoring models, algorithmic trading, digital lending, secure KYC/identity verification, and blockchain solutions.",
+    keywords: "fintech AI, fraud detection, KYC verification, blockchain in finance",
   },
   {
     id: 3,
-    img: healthcare,
-    title: "AI Solutions for Healthcare & Medical Technology",
+    img: governance,
+    title: "Retail & E-commerce",
     description:
-      "Intelligent AI solutions for healthcare analytics, diagnostics support, patient data management, and workflow automation with privacy-first design.",
-    keywords: "AI in healthcare, medical AI solutions, healthcare automation",
+      "Personalized shopping experiences, AI-driven recommendations, dynamic pricing, inventory optimization, and AR-based virtual try-ons.",
+    keywords: "retail AI, e-commerce personalization, dynamic pricing, AR try-ons",
   },
   {
     id: 4,
     img: advancedrobotics,
-    title: "AI Solutions for Manufacturing & Industrial Automation",
+    title: "Manufacturing & Industrial IoT",
     description:
-      "Smart automation, predictive analytics, and AI-powered monitoring systems to improve efficiency, quality control, and operational scalability.",
-    keywords: "AI in manufacturing, industrial automation, predictive analytics",
+      "Predictive maintenance, production optimization, quality control, and supply chain visibility with IIoT architectures.",
+    keywords: "industrial IoT, predictive maintenance, IIoT, manufacturing automation",
   },
   {
     id: 5,
-    img: energy,
-    title: "AI Solutions for Energy & Sustainability",
+    img: edtech,
+    title: "Education & EdTech",
     description:
-      "AI-powered optimization for energy management, sustainability analytics, predictive maintenance, and smart infrastructure systems.",
-    keywords: "AI for energy, sustainability AI, smart energy systems",
+      "Learning management systems, online classrooms, adaptive learning platforms, and AI-powered tutoring systems.",
+    keywords: "EdTech AI, LMS, adaptive learning, AI tutoring",
   },
   {
     id: 6,
-    img: edtech,
-    title: "AI Solutions for Education Technology (EdTech)",
+    img: energy,
+    title: "Logistics & Transportation",
     description:
-      "Intelligent learning platforms, personalized education systems, analytics-driven insights, and automation for modern digital education.",
-    keywords: "AI in education, EdTech AI solutions, personalized learning AI",
+      "Fleet management, route optimization, real-time tracking dashboards, and warehouse automation solutions.",
+    keywords: "logistics AI, fleet management, route optimization, warehouse automation",
   },
   {
     id: 7,
     img: space,
-    title: "AI Solutions for Aerospace & Advanced Research",
+    title: "Real Estate & Construction",
     description:
-      "AI-driven analytics, simulation systems, data modeling, and automation solutions for aerospace, research, and exploration technologies.",
-    keywords: "AI in aerospace, advanced AI analytics, research automation",
+      "Property listing platforms, virtual tours using VR/AR, CRM for agents, and project management tools.",
+    keywords: "real estate tech, VR property tours, construction management, real estate CRM",
   },
   {
     id: 8,
     img: security,
-    title: "AI Solutions for Cybersecurity & Data Protection",
+    title: "Media & Entertainment",
     description:
-      "AI-powered threat detection, security automation, data monitoring, and risk intelligence for secure digital infrastructure.",
-    keywords: "AI cybersecurity, data protection AI, threat detection systems",
+      "Content platforms, streaming apps, social networks, and interactive experiences powered by AR/VR and AI.",
+    keywords: "media AI, streaming platforms, AR VR entertainment, social networks",
   },
 ];
 

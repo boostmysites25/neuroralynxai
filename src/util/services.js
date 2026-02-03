@@ -34,6 +34,9 @@ import Game_DevelopmentSub2 from "../assets/images/services/Game_DevelopmentSub2
 import IoT_Development from "../assets/images/services/IoT_Development.jpeg";
 import IoT_DevelopmentSub1 from "../assets/images/services/IoT_DevelopmentSub1.jpeg";
 import IoT_DevelopmentSub2 from "../assets/images/services/IoT_DevelopmentSub2.jpeg";
+import Emerging_Technologies_Banner from "../assets/images/services/Emerging_Technologies_Banner.webp";
+import Emerging_Technologies_Sub1 from "../assets/images/services/Emerging_Technologies_Sub1.webp";
+import Emerging_Technologies_Sub2 from "../assets/images/services/Emerging_Technologies_Sub2.webp";
 
 export const serviceDetails = [
   {
@@ -191,5 +194,43 @@ export const serviceDetails = [
     fourthHeading:
       "Using AI to Drive Innovation and Growth",
     fourthDescripiton: `Use the power of Artificial Intelligence to transform your business and unlock new possibilities. AI solutions are changing industries by improving automation, helping with decision-making, and providing smart, data-driven insights. From machine learning and predictive analytics to conversational AI and process automation, our AI solutions help businesses increase efficiency, improve customer experiences, and scale operations smoothly. Stay competitive in today's digital world by integrating AI into your workflows, accelerating innovation, and building a smarter, more connected future.`,
+  },
+  {
+    id: 8,
+    bannerimg: Emerging_Technologies_Banner,
+    link: "emerging-technologies",
+    imageone: Emerging_Technologies_Sub1,
+    imgagetwo: Emerging_Technologies_Sub2,
+    title: "Emerging Technologies – IoT, AR/VR & Blockchain",
+    heading: "Production-Grade Capabilities for the Future of Business",
+    description:
+      "We help forward-thinking organizations adopt and scale emerging technologies. For us, these are not experimental add-ons – they are production-grade capabilities integrated into real business processes. From IoT and Industrial IoT (IIoT) to augmented and virtual reality, blockchain, and Web3, we deliver solutions that drive operational efficiency, create immersive experiences, and unlock new business models.",
+    secondHeading: "How We Help You With Emerging Technologies",
+    secondHeading_subheading: "Key Capabilities",
+    services: [
+      {
+        title: "IoT & Industrial IoT (IIoT) Solutions",
+        description:
+          "Connected devices, sensors, and smart infrastructure that enable real-time monitoring, predictive maintenance, and data-driven decision-making across manufacturing and operations.",
+      },
+      {
+        title: "AR/VR Development",
+        description:
+          "Immersive experiences for training, product visualization, remote collaboration, and customer engagement – built for enterprise scalability and integration with existing systems.",
+      },
+      {
+        title: "Blockchain Development & Web3",
+        description:
+          "Decentralized applications, smart contracts, DeFi protocols, and tokenization solutions designed for security, transparency, and long-term maintainability.",
+      },
+    ],
+    thirdHeading: "Why Emerging Technologies Matter for Your Business",
+    thirdDescription:
+      "IoT, AR/VR, and blockchain are no longer niche experiments – they are becoming core to how businesses operate, engage customers, and create value. IoT connects physical assets to digital intelligence, enabling predictive insights and automation at scale. AR/VR transforms how teams collaborate, how products are showcased, and how training and onboarding happen. Blockchain delivers trust, traceability, and new revenue streams through smart contracts and decentralized systems. At NeuroraLynx AI, we integrate these technologies into your existing workflows so you can innovate without disrupting what already works.",
+    whyMatter:
+      "Why This Matters: Early adopters of emerging technologies gain lasting competitive advantages. Production-ready implementations – not prototypes – are what separate market leaders from followers.",
+    fourthHeading: "From Experimentation to Enterprise Integration",
+    fourthDescripiton:
+      "Our approach to emerging technologies is grounded in enterprise discipline. We assess your readiness, design for scalability and security, and implement solutions that align with your regulatory and operational requirements. Whether you need IoT dashboards for factory floors, AR experiences for field service, or blockchain-based supply chain traceability, we deliver systems that are robust, maintainable, and built to evolve. Partner with NeuroraLynx AI to turn cutting-edge technology into lasting business value.",
   },
 ];
