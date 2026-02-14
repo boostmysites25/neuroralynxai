@@ -18,6 +18,15 @@ export default {
         // "radial-gradient(circle, rgba(0,100,158,0.9710477941176471) 5%, rgba(2,8,22,0.8253895308123249) 55%);",
         // "radial-gradient(circle, rgba(85,225,221,1) 10%, rgba(0,100,158,0.5) 50%, rgba(2,8,22,1) 100%);",
       },
+      keyframes: {
+        "border-flow": {
+          "0%, 100%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+        },
+      },
+      animation: {
+        "border-flow": "border-flow 3s ease infinite",
+      },
     },
   },
   plugins: [],

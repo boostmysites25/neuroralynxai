@@ -2,7 +2,16 @@ import {
   Smartphone,
   Palette,
   Cpu,
+  BrainCircuit,
+  Binary,
+  Bot,
+  View,
+  Settings,
+  Code2,
+  Linkedin,
+  Instagram,
 } from "lucide-react";
+
 import file from "../assets/images/png/file.png";
 import graph from "../assets/images/png/graph.png";
 import rocket from "../assets/images/png/rocket.png";
@@ -11,6 +20,7 @@ import integrity from "../assets/images/png/integrity.png";
 import quality from "../assets/images/png/quality.png";
 import success from "../assets/images/png/success.png";
 import Infinite from "../assets/images/png/Infinite.png";
+
 //industries
 import governance from "../assets/images/industries/governance.jpg";
 import fintech from "../assets/images/industries/fintech.jpg";
@@ -27,12 +37,11 @@ import { TfiLayoutMediaRightAlt } from "react-icons/tfi";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import {
   FaAppStoreIos,
-  FaInstagram,
-  FaLinkedin,
 } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import { SiFlutter } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
+
 
 export const companyDetails = {
   name: "NeuroraLynx AI",
@@ -43,11 +52,11 @@ export const companyDetails = {
   socialLinks: [
     {
       href: "https://www.linkedin.com/company/neuroralynxai",
-      icon: FaLinkedin,
+      icon: Linkedin,
     },
     {
       href: "https://www.instagram.com/neuroralynxai?utm_source=qr&igsh=OHdjOG93bTRmcGJk",
-      icon: FaInstagram,
+      icon: Instagram,
     },
     // { href: "", icon: FaXTwitter },
     // {
@@ -58,38 +67,87 @@ export const companyDetails = {
   whatsapp: "",
 };
 
+
 export const services = [
   {
-    title: "Mobile App Development – Native & Cross-Platform",
-    link: "mobile-app-development",
+    title: "Gen AI & LLM",
+    link: "gen-ai-llm",
     description:
-      "Our mobile app development teams build native iOS and Android applications for maximum performance and platform-specific features, as well as cross-platform apps using React Native and Flutter for faster time-to-market.",
+      "Unlock creativity and efficiency with generative AI solutions. From custom LLMs to content automation, we build intelligent systems that transform how you work.",
+    icon: BrainCircuit,
+    bgColor: "bg-purple-600",
+  },
+  {
+    title: "Machine Learning Development",
+    link: "machine-learning",
+    description:
+      "Turn data into predictive power. We build custom ML models for forecasting, recommendation, and anomaly detection to drive smarter decisions.",
+    icon: Binary,
+    bgColor: "bg-blue-600",
+  },
+  {
+    title: "Natural Language Processing",
+    link: "nlp",
+    description:
+      "Bridge the gap between human and machine language. Our NLP solutions analyze sentiment, automate text processing, and break language barriers.",
+    icon: Bot,
+    bgColor: "bg-green-600",
+  },
+  {
+    title: "Computer Vision",
+    link: "computer-vision",
+    description:
+      "Teach machines to see. We develop visual intelligence solutions for quality control, facial recognition, and automated monitoring.",
+    icon: View,
+    bgColor: "bg-red-600",
+  },
+  {
+    title: "Robotic Process Automation",
+    link: "rpa",
+    description:
+      "Streamline operations with digital bots. Automate repetitive tasks like data entry and invoice processing to free up your team for strategic work.",
+    icon: Settings,
+    bgColor: "bg-orange-600",
+  },
+  {
+    title: "Custom Web Development",
+    link: "web-development",
+    description:
+      "Robust web solutions for modern enterprises. We build scalable, secure, and responsive web platforms that drive business growth.",
+    icon: Code2,
+    bgColor: "bg-indigo-600",
+  },
+  {
+    title: "Mobile App Development",
+    link: "app-development",
+    description:
+      "Create mobile experiences that engage. Native and cross-platform apps designed for performance, usability, and high user retention.",
     icon: Smartphone,
     bgColor: "bg-blue-500",
   },
   {
-    title: "UX/UI Design & Digital Product Design",
+    title: "UX/UI Design",
     link: "ux-ui-design",
     description:
-      "Design at NeuroraLynx AI is deeply research-driven and data-informed. Our UX/UI teams conduct user research, stakeholder interviews, journey mapping, wireframing, prototyping, and usability testing to create interfaces that simplify complexity.",
+      "Design interfaces that people love to use. Deeply research-driven designs that simplify complexity and create effortless user journeys.",
     icon: Palette,
-    bgColor: "bg-gray-900",
+    bgColor: "bg-pink-600",
   },
   {
-    title: "Emerging Technologies – IoT, AR/VR & Blockchain",
+    title: "Emerging Technologies",
     link: "emerging-technologies",
     description:
-      "We help forward-thinking organizations adopt and scale emerging technologies. For us, these are not experimental add-ons – they are production-grade capabilities integrated into real business processes.",
+      "Pioneer the future with IoT, AR/VR, and Blockchain. Production-grade solutions that connect the physical and digital worlds.",
     icon: Cpu,
-    bgColor: "bg-gray-900",
+    bgColor: "bg-cyan-600",
   },
 ];
 
 export const whyChooseUs = [
-  "Innovative Design Solutions: Our team brings fresh perspectives to every project, creating strategies that stand out and help your brand connect with customers in meaningful ways.",
-  "Collaborative Approach: We work closely with you throughout the process, combining our technical expertise with your vision to build solutions that truly represent your business.",
-  "Proven Results: We focus on delivering solutions that make a real difference, helping you engage customers, build trust, and grow your business with measurable outcomes.",
-  "Staying Ahead: We keep up with the latest technologies and trends, ensuring your digital presence remains current and competitive in today's fast-paced market.",
+  "Deliver Measurable Results: We focus on practical outcomes — faster time-to-market, cost savings, increased revenue or productivity. We tailor solutions to deliver significant gains for your business.",
+  "Innovate Continuously: We invest in R&D on emerging technologies (like LLMs, RAG, blockchain, AR/VR) and share insights with our clients to keep you ahead of the curve.",
+  "Follow Best Practices: From secure coding to agile project management, we ensure high quality. We implement DevOps and DevSecOps pipelines so your software is built and monitored securely and efficiently.",
+  "Customer-Centric: We value transparency and partnership. We provide regular demos, clear documentation, and flexible engagement models (fixed bid, time & materials, staff augmentation).",
 ];
 
 export const testimonials = [
@@ -291,19 +349,62 @@ export const coreValues = [
 
 export const visionAndMission = [
   {
-    title: "Our Vision",
-    description:
-      "We aim to be a trusted partner for businesses looking to transform their digital presence. Our vision is to create technology solutions that combine innovation with practical value, helping companies achieve their goals faster and more effectively. We believe technology should make life easier, not more complicated, and we're committed to building solutions that truly serve people and businesses.",
-  },
-  {
     title: "Our Mission",
     description:
-      "We help businesses of all sizes build powerful digital solutions that work. Whether you're a startup or an established company, we provide web and app development services that are both cutting-edge and reliable. We focus on creating digital experiences that look great, work smoothly, and help you reach your business objectives. Through teamwork, innovation, and a commitment to quality, we turn complex challenges into simple, effective solutions.",
+      "We are committed to revolutionizing industry through intelligent automation. Our mission is to leverage machine learning, deep learning, and data analytics to create smart solutions that improve efficiency, productivity, and innovation. We focus on real-world, practical AI implementations and integrate responsible AI practices.",
   },
   {
-    title: "Our Journey",
+    title: "Our Vision",
     description:
-      "We started with a simple idea: technology should solve real problems. What began as a small team with big ambitions has grown into a company trusted by clients across different industries. We've completed hundreds of projects, each one teaching us something new. From helping startups launch their first app to supporting large enterprises with complex systems, we've learned that success comes from listening, adapting, and always putting quality first. As we continue growing, we stay focused on what matters most: delivering solutions that make a real difference.",
+      "To continually explore new frontiers — from generative AI and robotics to edge computing and augmented reality — so we can deliver future-ready solutions today. By combining AI with DevOps and cloud engineering, we ensure our systems are robust, secure, and scalable.",
+  },
+];
+
+export const expertiseServices = [
+  {
+    title: "Artificial Intelligence & Machine Learning",
+    description:
+      "We develop custom ML models, deep-learning neural networks, and AI agents that handle tasks like predictive analytics, natural language processing (NLP), computer vision, and generative AI. For example, our systems can analyze large datasets to forecast trends or power intelligent chatbots that enhance customer engagement.",
+  },
+  {
+    title: "Cloud Engineering & DevOps",
+    description:
+      "We design and implement scalable cloud architectures on AWS, Azure, or Google Cloud, and we automate deployment pipelines using DevOps practices. This includes container orchestration (e.g. Kubernetes), continuous integration/continuous deployment (CI/CD), and infrastructure-as-code (IaC).",
+  },
+  {
+    title: "Internet of Things (IoT) & Embedded Systems",
+    description:
+      "We build IoT solutions that connect devices and sensors to the cloud or edge for real-time monitoring and control. Our IoT projects include smart logistics sensors, fleet-tracking systems, predictive maintenance for industrial equipment, and intelligent analytics dashboards.",
+  },
+  {
+    title: "Cloud & Platform Services",
+    description:
+      "In addition to DevOps, we offer broad cloud consulting and management. We create high-availability architectures, serverless functions, data pipelines, and storage solutions.",
+  },
+  {
+    title: "Game Development & Interactive Media",
+    description:
+      "Leveraging our AI expertise, we also deliver immersive game and simulation experiences. Using engines like Unity or Unreal, we create both entertainment and enterprise applications, from AR/VR training simulations to AI-driven non-player characters.",
+  },
+  {
+    title: "Custom Software Development",
+    description:
+      "We provide custom software development and consulting across technologies — including data engineering, business intelligence, blockchain, and cybersecurity — always focusing on innovation and technical excellence. We recommend the most effective tech stack for each project.",
+  },
+];
+
+export const industryFocusData = [
+  {
+    title: "Logistics & Transportation",
+    description:
+      "AI and automation are now critical in logistics. We develop intelligent logistics platforms that use machine learning for route optimization, demand forecasting, and warehouse automation, helping transportation companies reduce costs and adapt to volatility.",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    title: "Startups & Enterprises",
+    description:
+      "We partner with lean startups to accelerate their growth with MVPs and prototypes built on modern frameworks. Similarly, we support large enterprises with digital transformation: modernizing legacy systems and integrating IoT or AI modules.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
   },
 ];
 
@@ -516,6 +617,7 @@ export const appDevelopmentPortfolio = [
 // Import AI project images
 import findMyAITool from "../assets/images/portfolio/ai/Find My AI Tool.png";
 import vyroAI from "../assets/images/portfolio/ai/AI Art Generator – Vyro AI.webp";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // AI Projects portfolio
 export const aiProjectsPortfolio = [

@@ -1,102 +1,102 @@
+import React, { useRef, useState } from "react";
 import { services } from "../util/constant";
-import { useTheme } from "../Context/ThemeContext";
-import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+const ServiceCard = ({ service, index }) => {
+    const cardRef = useRef(null);
+    const [rotate, setRotate] = useState({ x: 0, y: 0 });
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseMove = (e) => {
+        if (!cardRef.current) return;
+        const { left, top, width, height } = cardRef.current.getBoundingClientRect();
+        const x = (e.clientX - left - width / 2) / 25; // Sensitivity
+        const y = (e.clientY - top - height / 2) / 25; // Sensitivity
+        setRotate({ x: -y, y: x }); // Invert Y for correct tilt
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+        setRotate({ x: 0, y: 0 });
+    };
+
+    const Icon = service.icon;
+
+    return (
+        <div
+            ref={cardRef}
+            onMouseMove={(e) => {
+                setIsHovering(true);
+                handleMouseMove(e);
+            }}
+            onMouseLeave={handleMouseLeave}
+            data-aos="fade-up"
+            data-aos-delay={index * 100}
+            className="relative group perspective-1000"
+            style={{
+                transform: isHovering
+                    ? `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale(1.02)`
+                    : "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)",
+                transition: "transform 0.1s ease-out",
+            }}
+        >
+            {/* Holographic Border Effect */}
+            <div className="absolute -inset-[1px] rounded-[2rem] bg-gradient-to-r from-transparent via-primary/50 to-transparent bg-[length:400%_400%] opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-500 animate-border-flow" />
+
+            <div className="relative h-full p-8 rounded-[2rem] bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 backdrop-blur-md shadow-lg overflow-hidden flex flex-col gap-6">
+
+                {/* Shine Effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                <div className="flex justify-between items-start">
+                    <div className="relative z-10 w-16 h-16 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center text-primary shadow-[0_0_15px_rgba(var(--primary-rgb),0.3)] group-hover:shadow-[0_0_25px_rgba(var(--primary-rgb),0.5)] transition-all duration-300">
+                        <Icon size={32} className="drop-shadow-lg" />
+                    </div>
+
+                    <Link to={`/services/${service.link}`} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <ArrowUpRight size={20} className="opacity-50 group-hover:opacity-100 transition-opacity" />
+                    </Link>
+                </div>
+
+                <div className="relative z-10 flex flex-col gap-4 flex-grow">
+                    <h3 className="text-2xl font-bold text-darkbackground dark:text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-blue-400 transition-all duration-300">
+                        {service.title}
+                    </h3>
+                    <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed group-hover:text-gray-800 dark:group-hover:text-gray-200 transition-colors duration-300">
+                        {service.description}
+                    </p>
+                </div>
+
+                {/* Decorative Grid Lines */}
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-20 pointer-events-none" />
+            </div>
+        </div>
+    );
+};
 
 const ServicesGrid = () => {
-  const { theme } = useTheme();
-  const isDarkMode = theme === "dark";
-  const navigate = useNavigate();
-  const navigateTo = (link) => {
-    navigate(`/services/${link}`);
-  };
-  return (
-    <section>
-      <div className="dark:bg-darkblack paddingtop paddingbottom">
-        <div className="wrapper">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                data-aos="fade-up"
-                className={`relative aspect-square ${
-                  isDarkMode ? `card-glow-dark` : `card-glow-light`
-                } service-card-futuristic h-full dark:bg-darkblack/80 bg-white/90 backdrop-blur-sm group overflow-hidden rounded-xl border border-slate-700/50 cursor-pointer`}
-                onClick={() => navigateTo(service.link)}
-              >
-                {/* Animated border effect */}
-                <div className="absolute inset-0 rounded-xl border-2 border-transparent z-0 group-hover:border-primary/30 card-border-animate"></div>
+    React.useEffect(() => {
+        AOS.init();
+    }, []);
 
-                {/* Animated gradient background - different for light/dark mode */}
-                <div
-                  className={`absolute inset-0 ${
-                    isDarkMode
-                      ? "bg-gradient-to-br from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:via-primary/10 group-hover:to-primary/5"
-                      : "bg-gradient-to-br from-white via-white to-white group-hover:from-primary/5 group-hover:via-white group-hover:to-primary/5"
-                  } transition-all duration-700 rounded-xl z-0 card-gradient-animate`}
-                ></div>
+    return (
+        <section className="relative py-24 dark:bg-darkblack overflow-hidden">
+            {/* Ambient Glows */}
+            <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-[120px] pointer-events-none" />
 
-                {/* Glowing orb effect on hover */}
-                <div className="absolute -right-20 -top-20 w-40 h-40 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 z-0"></div>
-
-                {/* Subtle particle effect - adjusted for light mode */}
-                {/* <div
-                  className={`absolute inset-0 opacity-0 ${
-                    isDarkMode
-                      ? "group-hover:opacity-30"
-                      : "group-hover:opacity-15"
-                  } transition-opacity duration-700 z-0 card-particles`}
-                ></div> */}
-
-                {/* Content container */}
-                <div className="flex flex-col justify-evenly min-h-full p-6 text-darkblack dark:text-white relative z-10 transition-all duration-500 group-hover:translate-y-0">
-                  {/* Icon with enhanced animation */}
-                  <div className="relative">
-                    <div className="absolute -inset-3 bg-primary/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <service.icon className="w-10 h-10 text-primary transition-all duration-500 relative z-10" />
-                  </div>
-
-                  {/* Title with elegant animation */}
-                  <h3 className="text-xl font-bold mb-2 transition-all duration-500 relative group-hover:text-primary dark:group-hover:text-white">
-                    {service.title}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-1/2 transition-all duration-700 ease-out"></span>
-                  </h3>
-
-                  {/* Description with subtle animation */}
-                  <p className="desc transition-all duration-500 transform group-hover:translate-y-0 relative z-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-800 dark:group-hover:text-white">
-                    {service.description}
-                  </p>
-
-                  {/* Learn more button with futuristic animation */}
-                  <div className="h-8 overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-700 delay-100 flex items-center mt-3">
-                    <span className="text-sm font-medium text-primary flex items-center relative">
-                      <span className="relative z-10 flex items-center">
-                        Learn more
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 ml-1 transition-transform duration-500 group-hover:translate-x-1"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </span>
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-700 ease-out"></span>
-                    </span>
-                  </div>
+            <div className="wrapper relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-container">
+                    {services.map((service, index) => (
+                        <ServiceCard key={index} service={service} index={index} />
+                    ))}
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+            </div>
+        </section>
+    );
 };
 
 export default ServicesGrid;

@@ -41,45 +41,272 @@ import Emerging_Technologies_Sub2 from "../assets/images/services/Emerging_Techn
 export const serviceDetails = [
   {
     id: 1,
+    bannerimg: Artificial_Intelligence_Solutions,
+    link: "gen-ai-llm",
+    imageone: Artificial_Intelligence_Solutionssub1,
+    imgagetwo: Artificial_Intelligence_Solutionssub2,
+    title: "Gen AI & LLM",
+    heading: "Unlocking Creativity and Efficiency with Generative AI",
+    description:
+      "Generative AI and Large Language Models (LLMs) are redefining what’s possible in content creation, code generation, and complex problem-solving. We help businesses harness these powerful models to automate creative workflows, generate high-quality content at scale, and build intelligent assistants that understand context and nuance. From custom fine-tuned models to integrating leading LLMs like GPT-4 and Llama, we deliver solutions that drive innovation and operational excellence.",
+    secondHeading: "Transforming Business with Generative Intelligence",
+    secondHeading_subheading: "Key Capabilities",
+    services: [
+      {
+        title: "Custom LLM Fine-Tuning",
+        description:
+          "Adapt powerful pre-trained models to your specific domain and data for higher accuracy and relevance.",
+      },
+      {
+        title: "Content & Code Generation",
+        description:
+          "Automate marketing copy, technical documentation, and software coding tasks to boost productivity.",
+      },
+      {
+        title: "Conversational AI Agents",
+        description:
+          "Build sophisticated chatbots and virtual assistants that handle complex queries with human-like understanding.",
+      },
+    ],
+    thirdHeading: "The Next Era of AI Innovation",
+    thirdDescription:
+      "Generative AI isn't just a tool; it's a creative partner. By integrating LLMs into your workflows, you can solve problems faster, personalize customer interactions deeply, and unlock new value streams. We focus on ethical, secure, and scalable implementations that put you ahead of the curve.",
+    whyMatter:
+      "Why This Matters: Gen AI accelerates innovation cycles and reduces costs, giving you a competitive edge in a rapidly evolving digital landscape.",
+    fourthHeading: "Building the Future of Work",
+    fourthDescripiton:
+      "Our Gen AI solutions are designed to augment human intelligence, not replace it. We create systems that empower your teams to do more meaningful work by taking over repetitive cognitive tasks. Whether it's drafting reports, summarizing data, or brainstorming ideas, our AI tools are always on and ready to help.",
+  },
+  {
+    id: 2,
+    bannerimg: Data_Science_and_Analytics,
+    link: "machine-learning",
+    imageone: Data_Science_and_Analyticssub1,
+    imgagetwo: Data_Science_and_Analyticssub2,
+    title: "Machine Learning Development",
+    heading: "Turning Data into Predictive Power",
+    description:
+      "Machine Learning (ML) is at the heart of modern data-driven decision making. We build custom ML models that analyze vast amounts of data to uncover hidden patterns, predict future trends, and optimize operations. Our expertise spans supervised, unsupervised, and reinforcement learning, ensuring we choose the right approach for your specific business challenge.",
+    secondHeading: "Advanced ML Capabilities",
+    secondHeading_subheading: "What We Deliver",
+    services: [
+      {
+        title: "Predictive Analytics",
+        description:
+          "Forecast sales, customer churn, and market trends with high precision using historical data.",
+      },
+      {
+        title: "Recommendation Engines",
+        description:
+          "Boost engagement and sales by suggesting relevant products and content to your users.",
+      },
+      {
+        title: "Anomaly Detection",
+        description:
+          "Identify fraud, system failures, or quality issues in real-time to mitigate risks.",
+      },
+    ],
+    thirdHeading: "Intelligence That Scales",
+    thirdDescription:
+      "From prototype to production, we ensure your machine learning models are robust, scalable, and maintainable. We handle the entire MLOps lifecycle, including data pipelines, model training, deployment, and monitoring, so you can focus on the insights, not the infrastructure.",
+    whyMatter:
+      "Why This Matters: Predictive capabilities allow you to be proactive rather than reactive, seizing opportunities before competitors and avoiding potential pitfalls.",
+    fourthHeading: "Data-Driven Transformation",
+    fourthDescripiton:
+      "We believe that every company is a data company. Our Machine Learning solutions unlock the value trapped in your data warehouses, turning raw information into actionable strategic assets. By embedding ML into your core processes, we help you achieve higher efficiency and smarter growth.",
+  },
+  {
+    id: 3,
+    bannerimg: Chatbot_Development,
+    link: "nlp",
+    imageone: Chatbot_DevelopmentSub1,
+    imgagetwo: Chatbot_DevelopmentSub2,
+    title: "Natural Language Processing",
+    heading: "Bridging the Gap Between Human and Machine Language",
+    description:
+      "Natural Language Processing (NLP) enables computers to understand, interpret, and generate human language. We build NLP solutions that allow you to analyze customer sentiment, automate document processing, and interact with users in their native language. Our technologies break down communication barriers and unlock insights from unstructured text data.",
+    secondHeading: "Unlocking the Value of Text Data",
+    secondHeading_subheading: "Core Features",
+    services: [
+      {
+        title: "Sentiment Analysis",
+        description:
+          "Understand how customers feel about your brand by analyzing social media, reviews, and feedback.",
+      },
+      {
+        title: "Text Extraction & Summarization",
+        description:
+          "Automatically pull key information from documents and generate concise summaries to save time.",
+      },
+      {
+        title: "Language Translation",
+        description:
+          "Break language barriers with real-time translation services for global communication.",
+      },
+    ],
+    thirdHeading: "Understanding Context and Intent",
+    thirdDescription:
+      "Traditional systems struggle with the nuances of human language. Our NLP models are trained to understand context, sarcasm, and intent, delivering far more accurate results. Whether it's routing support tickets or analyzing legal contracts, our solutions handle language with human-like precision.",
+    whyMatter:
+      "Why This Matters: Most business knowledge is locked in text. NLP unlocks this asset, enabling faster decisions and deeper customer empathy.",
+    fourthHeading: "Conversational Intelligence",
+    fourthDescripiton:
+      "We go beyond simple keyword matching. Our NLP solutions power intelligent interfaces that can hold meaningful conversations, understand complex queries, and provide relevant answers. This transforms customer service from a cost center into a value driver.",
+  },
+  {
+    id: 4,
+    bannerimg: AR_VR_Development,
+    link: "computer-vision",
+    imageone: AR_VR_sub1,
+    imgagetwo: AR_VR_sub2,
+    title: "Computer Vision",
+    heading: "Teaching Machines to See and Understand",
+    description:
+      "Computer Vision empowers systems to derive meaningful information from digital images, videos, and other visual inputs. We develop visual intelligence solutions for quality control, facial recognition, autonomous navigation, and more. Our technology allows your applications to 'see' the world and take action based on visual data.",
+    secondHeading: "Visual Intelligence in Action",
+    secondHeading_subheading: "Applications",
+    services: [
+      {
+        title: "Object Detection & Tracking",
+        description:
+          "Identify and follow items in real-time for security, retail, and logistics applications.",
+      },
+      {
+        title: "Facial Recognition",
+        description:
+          "Secure authentication and personalized experiences based on accurate identity verification.",
+      },
+      {
+        title: "Visual Quality Inspection",
+        description:
+          "Automate manufacturing defects detection to ensure zero-defect production lines.",
+      },
+    ],
+    thirdHeading: "Seeing Beyond the Visible",
+    thirdDescription:
+      "Our computer vision models can detect patterns and details invisible to the human eye. By analyzing video feeds and images at scale, we help you automate monitoring tasks that would be impossible for humans to perform continuously.",
+    whyMatter:
+      "Why This Matters: Visual data is abundant but hard to analyze manually. Automation through computer vision creates safer, more efficient, and responsive environments.",
+    fourthHeading: "Automating Visual Tasks",
+    fourthDescripiton:
+      "From checking whether staff are wearing safety gear to analyzing retail shelf stock, our Computer Vision solutions work 24/7 without fatigue. We bring the power of sight to your digital infrastructure, enabling smart automation in the physical world.",
+  },
+  {
+    id: 5,
+    bannerimg: Robot_Process_automation,
+    link: "rpa",
+    imageone: Robot_Process_automationSub1,
+    imgagetwo: Robot_Process_automationSub2,
+    title: "Robotic Process Automation",
+    heading: "Streamlining Operations with Digital Bots",
+    description:
+      "Robotic Process Automation (RPA) automates repetitive, rule-based tasks using software bots. We implement RPA to handle data entry, invoice processing, and system integration, freeing your human workforce to focus on high-value strategic work. Our bots work 24/7 with zero error rates, boosting efficiency and compliance.",
+    secondHeading: "Efficiency Through Automation",
+    secondHeading_subheading: "What RPA Does",
+    services: [
+      {
+        title: "Workflow Automation",
+        description:
+          "Connect disparate systems and automate end-to-end business processes without major IT overhaul.",
+      },
+      {
+        title: "Data Entry & Validation",
+        description:
+          "Eliminate manual data entry errors and speed up processing times significantly.",
+      },
+      {
+        title: "Intelligent Document Processing",
+        description:
+          "Combine OCR and AI to read, understand, and process physical and digital documents.",
+      },
+    ],
+    thirdHeading: "The Digital Workforce",
+    thirdDescription:
+      "Think of RPA as a digital workforce that supplements your team. Our bots are easy to train, quick to deploy, and integrate with your existing legacy systems. They handle the boring stuff, so your people can handle the important stuff.",
+    whyMatter:
+      "Why This Matters: Manual errors cost money and time. RPA eliminates them while dramatically increasing processing speed and volume.",
+    fourthHeading: "Scalable Operational Excellence",
+    fourthDescripiton:
+      "Our RPA solutions scale with your business. Whether you need to process 100 invoices or 100,000, digital bots handle the load effortlessly. We help you identify the right processes to automate for maximum ROI and rapid payback.",
+  },
+  {
+    id: 6,
+    bannerimg: Full_Stack_Development,
+    link: "web-development",
+    imageone: Full_Stack_sub1,
+    imgagetwo: Full_Stack_sub2,
+    title: "Custom Web Development & Enterprise Web Platforms",
+    heading: "Robust Web Solutions for Modern Enterprises",
+    description:
+      "We engineer high-performance web applications tailored to unique enterprise requirements. From scalable architecture to responsive front-end design, we cover the full stack of web development. We build secure, fast, and reliable platforms that drive business growth and provide exceptional user experiences.",
+    secondHeading: "Full-Cycle Web Engineering",
+    secondHeading_subheading: "Our Expertise",
+    services: [
+      {
+        title: "Scalable Cloud Architectures",
+        description:
+          "Build systems that grow with you, utilizing the best of AWS, Azure, or Google Cloud.",
+      },
+      {
+        title: "Progressive Web Apps (PWA)",
+        description:
+          "Deliver app-like experiences on the web with offline capabilities and fast load times.",
+      },
+      {
+        title: "Enterprise Portal Development",
+        description:
+          "Secure, integrated portals for employees, partners, and customers to collaborate effectively.",
+      },
+    ],
+    thirdHeading: "Beyond Standard Websites",
+    thirdDescription:
+      "We don't just build websites; we build business engines. Our web platforms integrate with your CRM, ERP, and payment systems to create a unified digital ecosystem. We focus on security, performance, and SEO from day one.",
+    whyMatter:
+      "Why This Matters: Your web platform is your global storefront and operational hub. It needs to be as robust and professional as your business.",
+    fourthHeading: "Technology That Performs",
+    fourthDescripiton:
+      "Using modern frameworks like React, Angular, Node.js, and Python, we write clean, maintainable code. Our agile development process ensures you see progress early and often, enabling rapid feedback and alignment with your business goals.",
+  },
+  {
+    id: 7,
     bannerimg: webdevbannerimg,
     link: "app-development",
     imageone: appdevimg1,
     imgagetwo: appdevimg2,
     title: "Mobile App Development",
-    heading: "Building Mobile Apps That Work Smarter",
+    heading: "Creating Mobile Experiences That Engage",
     description:
-      "At NeuroraLynx AI, we create mobile applications that go beyond basic functionality. Our approach focuses on building apps that understand your users and adapt to their needs. We specialize in creating mobile experiences that integrate seamlessly with AI capabilities, making apps that feel intuitive and helpful. Whether you need an enterprise solution or a consumer app, we build mobile platforms that truly serve your business goals.",
-    secondHeading:
-      "What Makes Our Mobile Development Different",
-    secondHeading_subheading: "Key Benefits",
+      "Mobile is the primary touchpoint for modern users. We design and develop native and cross-platform mobile apps that offer seamless performance and intuitive UX. Whether it's iOS, Android, or Flutter, we build apps that people love to use, ensuring high retention and engagement.",
+    secondHeading: "Mobile-First Innovation",
+    secondHeading_subheading: "Key Offerings",
     services: [
       {
-        title: "Adaptive User Interfaces",
+        title: "Native iOS & Android Apps",
         description:
-          "Apps that learn from how users interact and adjust their interface and features to match user preferences.",
+          "Leverage full platform capabilities for maximum performance and user experience.",
       },
       {
-        title: "Smart AI Integration",
+        title: "React Native & Flutter Solutions",
         description:
-          "Smooth connection between your mobile app and AI systems for intelligent data processing and responses.",
+          "Write once, run everywhere. Cost-effective cross-platform development without compromising quality.",
       },
       {
-        title: "Advanced Security Features",
+        title: "IoT-Enabled Mobile Apps",
         description:
-          "Strong protection using multiple authentication methods and behavior analysis to keep user data safe.",
+          "Control smart devices and visualize data directly from your smartphone.",
       },
     ],
-    thirdHeading: "The Future of Mobile Apps",
+    thirdHeading: "User-Centric Design",
     thirdDescription:
-      "Mobile applications are evolving to become smarter and more helpful. At NeuroraLynx AI, we're building mobile experiences that use AI to understand context, predict needs, and learn from user behavior. Our apps don't just follow commands they anticipate what users need, learn from patterns, and get better over time. This approach turns mobile devices into helpful tools that boost productivity and make work easier. By building intelligence directly into mobile apps, we're creating technology that adapts to people, not the other way around.",
+      "Functionality is key, but usability is king. We focus heavily on the user journey, ensuring that your app is easy to navigate and solves real user problems. Our rigorous testing ensures bug-free launches and 5-star app store ratings.",
     whyMatter:
-      "Why This Matters: In today's busy world, people want apps that understand them. Smart mobile applications keep users engaged by providing exactly what they need, exactly when they need it, often before they even ask for it.",
-    fourthHeading: "Building Mobile Apps That Learn and Grow",
+      "Why This Matters: A poor mobile experience drives customers away. A great one builds brand loyalty and opens a direct channel to your audience.",
+    fourthHeading: "From Concept to App Store",
     fourthDescripiton:
-      "Our mobile development approach changes how apps work for users. By integrating AI directly into the app structure, we create systems that keep learning and improving. These smart apps analyze how people use them, understand the context, and personalize the experience for each user. The result is mobile solutions that feel less like software and more like helpful assistants that know what you need, simplify complicated tasks, and adjust to changes in real time. This doesn't just make apps better to use it changes how businesses connect with customers, employees, and partners through mobile technology.",
+      "We handle the end-to-end mobile lifecycle: strategy, design, development, testing, and submission. Post-launch, we utilize analytics to optimize performance and add features that keep your users coming back.",
   },
   {
-    id: 2,
+    id: 8,
     bannerimg: UX_UI_Design,
     link: "ux-ui-design",
     imageone: UX_UI_Sub1,
@@ -87,150 +314,71 @@ export const serviceDetails = [
     title: "UX/UI Design",
     heading: "Designing Interfaces That People Love to Use",
     description:
-      "Good design isn't just about looking nice it's about creating experiences that feel natural and easy. Our UX/UI designers focus on building interfaces that are both beautiful and simple to use. By understanding how people actually use digital products and streamlining workflows, we create interfaces that work well and look great. From early concepts to finished prototypes, we make sure your digital product feels right for every user.",
-    secondHeading: "How We Help You With Modern UI/UX Design",
-    secondHeading_subheading: "What You Get",
+      "Great technology needs great design. Our UX/UI experts create intuitive, accessible, and aesthetically pleasing interfaces that simplify complex functionality. We use data-driven design principles to create journeys that guide users effortlessly to their goals.",
+    secondHeading: "Empathy-Driven Design",
+    secondHeading_subheading: "Design Services",
     services: [
       {
-        title: "Easy to Navigate Interfaces",
+        title: "User Research & Prototyping",
         description:
-          "Smooth interfaces that feel natural and intuitive, making it easy for users to find what they need.",
+          "Validate ideas with real users before writing a single line of code to save time and money.",
       },
       {
-        title: "Accessible for Everyone",
+        title: "Interaction Design",
         description:
-          "Designs that work for people from different backgrounds, languages, and abilities.",
+          "Create engaging micro-interactions and animations that make the product feel alive.",
       },
       {
-        title: "Beautiful and Functional",
+        title: "Design Systems",
         description:
-          "Attractive visuals combined with well-planned user paths that make every interaction smooth and enjoyable.",
+          "Build consistent, reusable component libraries to speed up development and ensure brand consistency.",
       },
     ],
-    thirdHeading: "Using AI to Create Better Designs",
+    thirdHeading: "Where Form Meets Function",
     thirdDescription:
-      "Artificial Intelligence is changing how we design interfaces by creating dynamic systems that respond to how people actually use them. This allows for personalization, where interfaces adjust content and layout based on what each user prefers, leading to more engaging experiences. AI also helps make interfaces more accessible by adapting to different user needs, ensuring everyone can use them comfortably. At NeuroraLynx AI, we use these technologies to create smart, intuitive designs that meet user expectations today while preparing for what's coming next.",
+      "We don't just make things look pretty. We solve problems. Our design process aligns business objectives with user needs, creating a product that is both viable and desirable. We iterate constantly based on feedback.",
     whyMatter:
-      "Why This Matters: Good design works for everyone. When interfaces are intuitive and accessible, they connect with people regardless of language or culture, making your product useful for a wide audience.",
-    fourthHeading: "Design That Drives Innovation",
+      "Why This Matters: Design is the differentiator. In a crowded market, superior UX is often the reason a customer chooses you over a competitor.",
+    fourthHeading: "Accessible & Inclusive",
     fourthDescripiton:
-      "At NeuroraLynx AI, we believe great UI/UX design is what turns ideas into successful digital products. By really understanding how people behave and what they need, we create interfaces that not only work well but also inspire and engage users. Our design approach focuses on making every interaction smooth and enjoyable, ensuring every part of the experience is both useful and pleasant. Through ongoing testing and user feedback, we keep improving our designs to stay current with changing user preferences and new technologies. Work with NeuroraLynx AI to bring innovation to your product, using modern UI/UX design to create meaningful connections with users and drive business growth.",
-  },
-
-  {
-    id: 4,
-    bannerimg: Full_Stack_Development,
-    link: "web-development",
-    imageone: Full_Stack_sub1,
-    imgagetwo: Full_Stack_sub2,
-    title: "Web Development",
-    heading: "Building Websites That Work for Your Business",
-    description:
-      "We create websites that do more than just look good they actually help your business grow. Our web development team builds sites that are fast, secure, and easy to use. We focus on understanding your business goals and creating web solutions that help you reach them. From simple landing pages to complex web applications, we build websites that work well and look great.",
-    secondHeading:
-      "How We Help You With Full Stack Web Development",
-    secondHeading_subheading: "What You Get",
-    services: [
-      {
-        title: "Responsive Front-End Design",
-        description:
-          "Engaging websites that look and work great on any device, from phones to desktops.",
-      },
-      {
-        title: "Reliable Back-End Systems",
-        description:
-          "Secure server setups that can handle high traffic and keep your site running smoothly.",
-      },
-      {
-        title: "E-Commerce and Custom Solutions",
-        description:
-          "From online stores to specialized web applications, we build solutions that are built to last and grow with your business.",
-      },
-    ],
-    thirdHeading: "Using AI to Build Smarter Websites",
-    thirdDescription:
-      "Artificial Intelligence is changing web development by automating routine tasks, predicting what users need, and helping developers write better code. This makes development faster and more efficient, letting teams focus on solving complex problems and planning strategically. AI tools help streamline workflows, optimize designs, and improve user experiences with less manual work. By using AI in web development, we can create smarter, faster, and more efficient websites that set new standards online.",
-    whyMatter:
-      "Why This Matters: Your website is often the first thing people see about your business. A well-built, high-performing website helps you stand out and connect with customers effectively.",
-    fourthHeading: "Full Stack Development That Drives Results",
-    fourthDescripiton: `Full stack web development brings together front-end and back-end technologies to create complete, dynamic web applications. This approach lets us manage everything from how the site looks to how it processes data, all in one cohesive system. By using modern development tools like MEAN and MERN stacks, we can work faster, collaborate better, and launch scalable solutions quickly. This complete approach encourages creativity while staying flexible as technology evolves, helping us continuously improve and deliver great user experiences.`,
-  },
-
-  {
-    id: 7,
-    bannerimg: Artificial_Intelligence_Solutions,
-    link: "artificial-intelligence",
-    imageone: Artificial_Intelligence_Solutionssub1,
-    imgagetwo: Artificial_Intelligence_Solutionssub2,
-    title: "Artificial Intelligence",
-    heading: "AI Solutions That Help Your Business Succeed",
-    description:
-      "Artificial intelligence is transforming how businesses operate, helping companies make better decisions based on data. We specialize in creating AI solutions that uncover insights, automate tasks, and improve your operations. From machine learning and predictive analytics to natural language processing, our AI technologies solve real business challenges and give you an advantage in the market.",
-    secondHeading:
-      "How We Help You With Artificial Intelligence Solutions",
-    secondHeading_subheading: "What You Get",
-    services: [
-      {
-        title: "Predictive Analytics and Machine Learning",
-        description:
-          "Use large amounts of data to forecast trends, automate processes, and provide smart recommendations for your business.",
-      },
-      {
-        title: "Natural Language Processing",
-        description:
-          "AI systems that understand and work with human language, adapting and learning from different communication styles.",
-      },
-      {
-        title: "Computer Vision and Automation",
-        description:
-          "Optimize workflows in manufacturing, healthcare, and other industries through intelligent automation and visual recognition.",
-      },
-    ],
-    thirdHeading: "How AI Is Changing Business",
-    thirdDescription:
-      "Artificial Intelligence is transforming industries, opening up new possibilities, and shaping the future of technology. From smart automation to predictive analytics and personalized experiences, AI solutions help businesses work more efficiently, make better decisions, and discover new opportunities. Whether in healthcare, finance, customer service, or other fields, AI innovation is changing how work gets done, driving growth, and creating smarter, data-driven systems. Use AI to stay competitive, streamline operations, and build a future where intelligent systems work alongside people to achieve more.",
-    whyMatter:
-      "Why This Matters: AI insights help you adapt quickly to market changes, customer behavior shifts, and new opportunities, giving you the ability to respond at scale.",
-    fourthHeading:
-      "Using AI to Drive Innovation and Growth",
-    fourthDescripiton: `Use the power of Artificial Intelligence to transform your business and unlock new possibilities. AI solutions are changing industries by improving automation, helping with decision-making, and providing smart, data-driven insights. From machine learning and predictive analytics to conversational AI and process automation, our AI solutions help businesses increase efficiency, improve customer experiences, and scale operations smoothly. Stay competitive in today's digital world by integrating AI into your workflows, accelerating innovation, and building a smarter, more connected future.`,
+      "We design for everyone. Adhering to WCAG guidelines, we ensure your digital products are accessible to users with disabilities, expanding your market reach and demonstrating social responsibility.",
   },
   {
-    id: 8,
+    id: 9,
     bannerimg: Emerging_Technologies_Banner,
     link: "emerging-technologies",
     imageone: Emerging_Technologies_Sub1,
     imgagetwo: Emerging_Technologies_Sub2,
-    title: "Emerging Technologies – IoT, AR/VR & Blockchain",
-    heading: "Production-Grade Capabilities for the Future of Business",
+    title: "Emerging Technologies",
+    heading: "Pioneering the Future with IoT, AR/VR & Blockchain",
     description:
-      "We help forward-thinking organizations adopt and scale emerging technologies. For us, these are not experimental add-ons – they are production-grade capabilities integrated into real business processes. From IoT and Industrial IoT (IIoT) to augmented and virtual reality, blockchain, and Web3, we deliver solutions that drive operational efficiency, create immersive experiences, and unlock new business models.",
-    secondHeading: "How We Help You With Emerging Technologies",
-    secondHeading_subheading: "Key Capabilities",
+      "Stay ahead of the curve by adopting the technologies of tomorrow. We help enterprises integrate IoT, Augmented Reality, Virtual Reality, and Blockchain into their operations. These emerging technologies offer new ways to visualize data, secure transactions, and connect the physical and digital worlds.",
+    secondHeading: "Innovating at the Edge",
+    secondHeading_subheading: "Tech Frontiers",
     services: [
       {
-        title: "IoT & Industrial IoT (IIoT) Solutions",
+        title: "IoT & Smart Connectivity",
         description:
-          "Connected devices, sensors, and smart infrastructure that enable real-time monitoring, predictive maintenance, and data-driven decision-making across manufacturing and operations.",
+          "Connect assets and gather real-time data for predictive maintenance and smart operations.",
       },
       {
-        title: "AR/VR Development",
+        title: "Blockchain & Web3",
         description:
-          "Immersive experiences for training, product visualization, remote collaboration, and customer engagement – built for enterprise scalability and integration with existing systems.",
+          "Implement secure, transparent, and decentralized ledgers for supply chain and finance.",
       },
       {
-        title: "Blockchain Development & Web3",
+        title: "AR/VR Immersive Experiences",
         description:
-          "Decentralized applications, smart contracts, DeFi protocols, and tokenization solutions designed for security, transparency, and long-term maintainability.",
+          "Revolutionize training, marketing, and visualization with immersive 3D environments.",
       },
     ],
-    thirdHeading: "Why Emerging Technologies Matter for Your Business",
+    thirdHeading: "Practical Innovation",
     thirdDescription:
-      "IoT, AR/VR, and blockchain are no longer niche experiments – they are becoming core to how businesses operate, engage customers, and create value. IoT connects physical assets to digital intelligence, enabling predictive insights and automation at scale. AR/VR transforms how teams collaborate, how products are showcased, and how training and onboarding happen. Blockchain delivers trust, traceability, and new revenue streams through smart contracts and decentralized systems. At NeuroraLynx AI, we integrate these technologies into your existing workflows so you can innovate without disrupting what already works.",
+      "We focus on real-world applications, not just hype. We help you identify practical use cases where emerging tech delivers tangible ROI. Whether it's a digital twin for manufacturing or a blockchain for provenance, we make it work.",
     whyMatter:
-      "Why This Matters: Early adopters of emerging technologies gain lasting competitive advantages. Production-ready implementations – not prototypes – are what separate market leaders from followers.",
-    fourthHeading: "From Experimentation to Enterprise Integration",
+      "Why This Matters: Early adoption of transformative tech positions you as a market leader and opens new revenue streams that don't exist yet.",
+    fourthHeading: "Future-Proof Solutions",
     fourthDescripiton:
-      "Our approach to emerging technologies is grounded in enterprise discipline. We assess your readiness, design for scalability and security, and implement solutions that align with your regulatory and operational requirements. Whether you need IoT dashboards for factory floors, AR experiences for field service, or blockchain-based supply chain traceability, we deliver systems that are robust, maintainable, and built to evolve. Partner with NeuroraLynx AI to turn cutting-edge technology into lasting business value.",
+      "Technology moves fast. We build flexible architectures that can evolve. Our expertise in emerging tech ensures that your investments today continue to deliver value as the landscape changes.",
   },
 ];

@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import robot from "../assets/images/ai-robot.png";
+import ContactForm from "./ContactForm";
 
 const HomePageBanner = () => {
   useEffect(() => {
@@ -50,47 +51,46 @@ const HomePageBanner = () => {
         }}
       />
       <div className="flex items-center w-full h-full pt-[7rem] pb-[4rem] min-h-screen">
-        <div className="wrapper flex flex-col justify-center items-center gap-5">
-          <div className="flex flex-col gap-4 items-start max-w-5xl mx-auto justify-center relative z-[1]">
-            <p
-              data-aos="fade-right"
-              className="text-xl text-gray-900 font-semibold"
+        <div className="wrapper w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex flex-col gap-4 items-start justify-center relative z-[1]">
+              <p
+                data-aos="fade-right"
+                className="text-xl text-gray-900 font-semibold"
+              >
+                Welcome to NeuroraLynx AI
+              </p>
+              <h1
+                data-aos="fade-right"
+                className="main-title dark:!text-gray-900 font-bold !leading-tight"
+              >
+                Enterprise AI, Generative AI & Full-Stack Software Development Company
+              </h1>
+              <p data-aos="fade-right" className="desc !text-black/80">
+                Architecting Intelligent Digital Ecosystems – From Generative
+                AI, Custom LLMs, and Advanced Machine Learning to Scalable Web,
+                Mobile, IoT, AR/VR, and Blockchain Solutions.
+              </p>
+              <div data-aos="fade-right" className="flex gap-4 mt-10">
+                <Link to="/about-us" className="primary-btn">
+                  Get Started
+                </Link>
+                <Link to="/contact-us" className="primary-btn">
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-left"
+              className="bg-black/40 text-black backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-xl relative z-[1]"
             >
-              Welcome to NeuroraLynx AI
-            </p>
-            <h1
-              data-aos="fade-right"
-              className="main-title dark:!text-gray-900 font-bold !leading-tight"
-            >
-              Enterprise AI, Generative AI & Full-Stack Software Development Company
-            </h1>
-            <p data-aos="fade-right" className="desc !text-black/80">
-            Architecting Intelligent Digital Ecosystems – From Generative AI, Custom LLMs, and Advanced Machine Learning to Scalable Web, Mobile, IoT, AR/VR, and Blockchain Solutions.
-            </p>
-            <div data-aos="fade-right" className="flex gap-4 mt-10">
-              <Link to="/about-us" className="primary-btn">
-                Get Started
-              </Link>
-              <Link to="/contact-us" className="primary-btn">
-                Contact Us
-              </Link>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Get a Free Consultation
+              </h2>
+              <ContactForm />
             </div>
           </div>
-          {/* <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
-            <img
-              loading="lazy"
-              id="robot"
-              src={robot}
-              srcset={`${robot} 300w,
-             ${robot} 600w,
-             ${robot} 1200w`}
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
-              alt="robot"
-              width="600"
-              height="400"
-              class="h-[14rem] lg:h-[18rem] w-auto object-contain"
-            />
-          </div> */}
         </div>
       </div>
     </div>
